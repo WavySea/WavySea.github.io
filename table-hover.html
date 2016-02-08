@@ -1,0 +1,183 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="Keywords" content="blog"/>
+    <meta name="Description" content="blog"/>
+    <title>Simple</title>
+    <link rel="shortcut icon" href="/static/favicon.png"/>
+    <link rel="stylesheet" type="text/css" href="/main.css" />
+</head>
+<body>
+<div class="main">
+    <div class="header">
+    	<ul id="pages">
+            <li><a href="/">home</a></li>
+            <li><a href="/#/tags">tags</a></li>
+            <li><a href="/#/archive">archive</a></li>
+    	</ul>
+    </div>
+	<div class="wrap-header">
+	<h1>
+    <a href="/" id="title"></a>
+	</h1>
+	</div>
+<div id="md" style="display: none;">
+<!-- markdown -->
+CSS can beautify the tables.  
+Basic knowledge:  
+*tr--row  
+*td--cell  
+*th--header  
+  
+表格可以按照 **行**、 **列**、**单元格** 三种情况分别进行装饰。    
+*****
+``行``  
+方法一：   
+给tr设置相应id 或者class， 然后在css声明时加入相应的id 或class标签。  
+<pre><code>&lt;tr class = "row1">for row1&lt;/tr>    
+   
+
+tr.row1{background:black;}</code></pre>
+  
+方法二：   
+header可以直接通过设置th来设置表头的突出
+<pre><code>&lt;th>I'm header&lt;/th>    
+   
+
+th {background:black;}</code></pre>   
+  
+``列``  
+非常方便的方法是用td:nth-child(n)  
+<pre><code>&lt;tr>list1
+    &lt;td>cell&lt;/td>
+    &lt;td>cell&lt;/td>
+    &lt;td>cell&lt;/td>
+&lt;/tr>    
+   
+
+td:nth-child(2) {background:black;}</code></pre>     
+``hover``    
+    
+想要高亮某一个单元格，可以直接用td:hover, 如果有指定某一个单元格，则可以先在html中设置td的id或者class， 然后在css中运用 *td.certain-class:hover{}* 需要注意的是，*千万不要在中间加空格*。
+  
+ 
+
+<!-- markdown end -->
+</div>
+<div class="entry" id="main">
+<!-- content -->
+<p>CSS can beautify the tables. <br>
+Basic knowledge: <br>
+*tr--row <br>
+*td--cell <br>
+*th--header  </p>
+
+<p>表格可以按照 <strong>行</strong>、 <strong>列</strong>、<strong>单元格</strong> 三种情况分别进行装饰。    </p>
+
+<hr>
+
+<p><code>行</code> <br>
+方法一： <br>
+给tr设置相应id 或者class， 然后在css声明时加入相应的id 或class标签。  </p>
+
+<pre><code>&lt;tr class = "row1"&gt;for row1&lt;/tr&gt;    
+
+
+tr.row1{background:black;}</code></pre>
+
+<p>方法二： <br>
+header可以直接通过设置th来设置表头的突出</p>
+
+<pre><code>&lt;th&gt;I'm header&lt;/th&gt;    
+
+
+th {background:black;}</code></pre>   
+
+<p><code>列</code> <br>
+非常方便的方法是用td:nth-child(n)  </p>
+
+<pre><code>&lt;tr&gt;list1
+    &lt;td&gt;cell&lt;/td&gt;
+    &lt;td&gt;cell&lt;/td&gt;
+    &lt;td&gt;cell&lt;/td&gt;
+&lt;/tr&gt;    
+
+
+td:nth-child(2) {background:black;}</code></pre>     
+
+<p><code>hover</code>    </p>
+
+<p>想要高亮某一个单元格，可以直接用td:hover, 如果有指定某一个单元格，则可以先在html中设置td的id或者class， 然后在css中运用 <em>td.certain-class:hover{}</em> 需要注意的是，<em>千万不要在中间加空格</em>。</p>
+<!-- content end -->
+</div>
+<br>
+<br>
+    <div id="disqus_thread"></div>
+	<div class="footer">
+		<p>© Copyright 2014 by isnowfy, Designed by isnowfy</p>
+	</div>
+</div>
+<script src="main.js"></script>
+<script id="content" type="text/mustache">
+    <h1>{{title}}</h1>
+    <div class="tag">
+    {{date}}
+    {{#tags}}
+    <a href="/#/tag/{{name}}">#{{name}}</a>
+    {{/tags}}
+    </div>
+</script>
+<script id="pagesTemplate" type="text/mustache">
+    {{#pages}}
+    <li>
+        <a href="{{path}}">{{title}}</a>
+    </li>
+    {{/pages}}
+</script>
+<script>
+$(document).ready(function() {
+    $.ajax({
+        url: "main.json",
+        type: "GET",
+        dataType: "json",
+        success: function(data) {
+            $("#title").html(data.name);
+            var pagesTemplate = Hogan.compile($("#pagesTemplate").html());
+            var pagesHtml = pagesTemplate.render({"pages": data.pages});
+            $("#pages").append(pagesHtml);
+            //path
+            var path = "table-hover.html";
+            //path end
+            var now = 0;
+            for (var i = 0; i < data.posts.length; ++i)
+                if (path == data.posts[i].path)
+                    now = i;
+            var post = data.posts[now];
+            var tmp = post.tags.split(" ");
+            var tags = [];
+            for (var i = 0; i < tmp.length; ++i)
+                if (tmp[i].length > 0)
+                    tags.push({"name": tmp[i]});
+            var contentTemplate = Hogan.compile($("#content").html());
+            var contentHtml = contentTemplate.render({"title": post.title, "tags": tags, "date": post.date});
+            $("#main").prepend(contentHtml);
+            if (data.disqus_shortname.length > 0) {
+                var disqus_shortname = data.disqus_shortname;
+                (function() {
+                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+            }
+        }
+    });
+});
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ["\\(", "\\)"]], processEscapes: true}});
+</script>
+</body>
+</html>
