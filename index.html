@@ -5,36 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="Keywords" content="blog"/>
     <meta name="Description" content="blog"/>
-    <title>Simple</title>
-    <link rel="shortcut icon" href="/static/favicon.png"/>
-    <link rel="stylesheet" type="text/css" href="main.css" />
+    <title>WavySea</title>
+    <!--link rel="shortcut icon" href="/static/favicon.png"/-->
+    <link rel="stylesheet" type="text/css" href="main1.css" />
 </head>
 <body>
 <div class="main">
     <div class="header">
-        <ul id="pages">
-            <li>
-                <a href="/">home</a>
-            </li>
-            <li>
-                <a href="/#/tags">tags</a>
-            </li>
-            <li>
-                <a href="/#/archive">archive</a>
-            </li>
-        </ul>
+        <div class = "left">
+           <h1>H.Su</h1>
+        </div>
+        <div class = "right">
+            <h3>Stay Hungry, Stay Foolish</h3>
+        </div>
     </div>
-    <div class="wrap-header">
-        <h1>
-        <a href="/" id="title"></a>
-        </h1>
+
+    <div class = "sidebar">
+      <ul id="side">
+      	<li>
+      		<a href="/">home</a>
+      	</li>
+      	<li>
+      		<a href="/#/tags">tags</a>
+      	</li>
+      	<li>
+            <a href="/#/archive">archive</a>
+        </li>
+      </ul>
     </div>
-    <div class="innermain" id="main">
+
+    <div class= "main-content">
+        <table class= "main-content-table">
+            <tr class= "main-content-one">
+                <td class= "leftone"> About MySelf</td>
+                <td class= "rightone"> JavaScript </td>
+            </tr>
+            <tr class="main-content-two">
+                <td class= "left-two"> HTML/CSS </td>
+                <td class= "right-two"> Data Visualization </td>
+            </tr>
+        </table>
     </div>
+
     <div class="footer">
-        <p>© Copyright 2014 by isnowfy, Designed by isnowfy</p>
+        <p>© Copyright 2016 by WavySea, Designed by WavySea</p>
     </div>
 </div>
+
 <script src="main.js"></script>
 <script id="itemTemplate" type="text/mustache">
     {{#posts}}
