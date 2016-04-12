@@ -1,0 +1,306 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="Keywords" content="blog"/>
+    <meta name="Description" content="blog"/>
+    <title>Simple</title>
+    <link rel="shortcut icon" href="/static/favicon.png"/>
+    <link rel="stylesheet" type="text/css" href="/main.css" />
+</head>
+<body>
+<div class="main">
+    <div class="header">
+    	<ul id="pages">
+            <li><a href="/">home</a></li>
+            <li><a href="/#/tags">tags</a></li>
+            <li><a href="/#/archive">archive</a></li>
+    	</ul>
+    </div>
+	<div class="wrap-header">
+	<h1>
+    <a href="/" id="title"></a>
+	</h1>
+	</div>
+<div id="md" style="display: none;">
+<!-- markdown -->
+网易微专业---课程笔记
+Photoshop切图
+===================
+什么是切图：   
+ > - 设计稿中切出网页素材 （常指psd文件的素材切出保存为.jpg和.png格式）   
+> - 编写代码， 引入切出的background图片（HTML中常用img选择器；css中常用background图片，引入一个合并图，再用position定位出来）
+
+----------
+
+
+使用ps工具
+-------------
+1. 在打开photoshop后首先更改ps的单位与标尺，通过***编辑--首选项--单位与标尺*** 菜单将标尺改为 **像素**。像素是我们经常使用的标准单位。   
+2. 常用的面板包括五个： ***工具， 选项，图层，历史记录，及信息面板***  打开这些窗口后，可以通过设置 **窗口--工作区--新建--保存设置好的工作区** 来保存自己的设置。   
+ **Note:**  
+(1) 信息面板的快捷键为F8，主要功能是可以与矩形选框相结合，做测量工作，可以测量**颜色，位置，尺寸**信息。  
+  (2) 历史记录面板可以回退。 Ctrl + Z可以回退一步，Ctrl+Alt+z则是一步步往前撤销。还有一个方式是直接在历史记录面板中点击想要回退到的某一个结点。  
+(3) 工具面板中包括 ***移动工具***（要勾选"自动选择"，选择"图层"而不是"组"），***矩形选框工具，魔棒工具，裁剪及切片工具，缩放工具***（Ctrl+加号/减号，或 Ctrl+滚轮，Ctrl+1直接缩放至100%）    
+(4) 使用时要通过"视图"菜单标选***显示额外内容***；   
+(5) 关于对齐，移动图层时，靠近边缘或其他图层时会有吸附力；   
+(6) 标尺的快捷键 ***Ctrl+R ***, 参考线调用的快捷键***Ctrl+; *** 
+
+
+PS图片测量及取色
+-------------
+
+####**测量**
+在测量时，使画布尽可能大，以便测量的数据更精准。   
+(1) 测量图片大小，可以用***矩形选框***工具，画出一个嵌套的矩形，在信息面板中查看矩形的长宽；   
+(2) 测量文字字号大小。 若文字为单独的图层，***单击文字--单击图层--选项区会显示字号***； 若不为单独的图层， 则用***矩形选框***工具，但是注意不同字体在测量时可能有误差。   
+(3) 测量文字间行高。方法一：点击文字--图层--文件夹图标--工具栏行高； 方法二： 用***矩形选框***工具，从第一行文字下部到第二行文字下部的距离则为行高。   
+(4) 当我们既想选择一个很大的区域测量其宽度，又想要放大画布该怎么办？  在整个区域左边画一个小矩形框，在区域最右边画一个小矩形框，再用***查看工具***显示出两个矩形框的距离和宽，就是大区域的宽。
+
+
+#### **取色**
+(1) 常用工具为***拾色器***和***吸管***。    
+(2) 获取文字颜色：若文字在单独图层，则点击文字后，选中图层查看图层信息。 若文字不在单独图层，或要获取边框颜色时，***放大画布，吸取颜色***。 note:若单独图层的文字有其他叠加效果，则还是直接吸取颜色。  
+(3) 如何确定某一区域是否为纯色？ 可以用拾色器不断吸取该区域内的不同位置，可以看到数值不断变化，则证明不为纯色。    
+(4) 如何确定某一区域的颜色是否为线性渐变？ 用***移动工具***选中图层，***魔棒工具***点击后会自动选择一条容差相同的区域。
+
+    
+      
+
+切图
+-------------
+#### **哪些图片要切**
+- 修饰性的：background属性--图标、logo、有特殊效果的按钮、文字、非纯色背景等。（一般存为png格式）
+- 内容性的：HTML中的img，banner，广告，配图等。（一般存为jpg格式）***内容性图片通常不用切出，只需要测量大小后占位***   
+
+####**步骤**
+1.若要切图片为独立图层，则***隐藏文字，只留图层***；若要切图片为已被合并的图层，则用***矩形选框***选中该图，选择***自由变换***工具中的***拉伸*** 或者 ***移动工具***+***Alt*** + ***拉伸***+ shift（保持水平）；   
+2.操作PNG8图片时，***先合并可见图层***。当选区不规则时，先用***矩形选框***，再用***魔棒***工具+***Alt***去除多余部分。   
+3.在X轴方向上平铺时，需要充满新建画布的宽。   
+####**活动页切片**   
+拉参考线：把网页平分为几部分；选择切片工具：在crop工具下；点击"基于参考线的切片"按钮。     
+
+
+保存和维护
+-------------
+#### **保存**  
+- 若需要的内容是已经被合并在一起的情况：矩形——魔棒-----Ctrl + C —-Ctrl + N ——Ctrl +V 复制，新建，粘贴 到新的文件   
+- 若需要的内容在独立图层，新建文件后，直接把该图拖入新文件
+- 存储为web所用格式——窗口 Alt + Shift + Ctrl +S   (快捷键可以提高效率)  
+- 保存类型：
+1. JPG： 适合色彩丰富且无透明要求的图片；品质一般设为60-80之间，目的是一方面保留一定图片品质，同时缩小图片大小以便于网络传输；
+2. PNG8：适合色彩不太丰富的图片，有或无透明要求均可；图片大小比较小，适合网络传输；在保存时注意杂边选为无，选无仿色，选好后可以保存设置留着以后用；
+3. PNG24：适合半透明格式，因为PNG24不会压缩图片，因此一方面图片会保留原品质和色彩，另一方面大小会相对较大。
+- ps. 保留一份PSD： 便于后期维护，保留原图质量；   
+
+#### **修改、维护**
+1. 更改画布大小：图像—-画布大小 （PS.定位选在左上角）
+2. 移动图标：若为独立图层，用移动工具拖动；若为非独立图层，矩形选框选中，再用移动工具拖动；若想把两个图标分开为两个图层，选中后crlt + X剪切，再ctrl+v粘贴，就已经是分开图层了
+3. 减小画布：选取工具选中需要的区域，再裁剪（图像—裁剪）； 直接用裁剪工具
+4. 维护PNG8格式时，更改从索引颜色格式到RGB，以防丢失颜色信息：图像—模式—RGB；    
+#### **图片优化与合并**    
+使用背景图：   
+HTML： ```<button class=“u-btn”>click me </button>```   
+CSS: ```.u-btn{background:url(images/btn.png) no-repeat 0 0;}```
+	```.u-btn{background:url(images/sprite.png) no-repeat 0 -50;}  ```(用于图标合并在一张图里的情况，相当于图片向上移动了50px)    
+####**图片合并方案**
+- Sprite拼图：  ***优点***：减少网络请求，提升网页加载速度；
+- 大小与质量：二者取平衡；   
+- 压缩工具：无损 Minimage（图片大小无明显影响）有损Tinypng(图片大小有明显改变)
+- 合并排列：图片之间必须保留空隙（可维护性以便后续的改变，并且给css代码保留一定误差空隙即容错性）  （对于具体要保留多大的空隙呢，并没有一个明确的数值，遵循的一个宗旨就是保留的空隙足够后期维护就可以了。如果是小图标，留的空隙可适当小一些，一般20像素左右；那如果是大图标，要留的空隙就要大一点，因为大图标在调整的时候，影响到的空间也会比较大。）
+- 排列方式：横向排列，纵向排列   
+- 合并：    
+(1) 同属一个模块的图片进行合并；    
+(2) 大小相近的图片合并（利于利用空间）；    
+(3) 色彩相近的图片合并（使图片大小较小）    
+(4) 推荐：只本页用到的图片合并（后面的页面不用再加载这个图片）；    
+(5) 有状态的图标合并（两个状态的图标差别只是x距离而已，便于后续操作）    
+***IE6不支持PNG24半透明或者CSS新性能，则存两份图片***
+<!-- markdown end -->
+</div>
+<div class="entry" id="main">
+<!-- content -->
+<p>网易微专业---课程笔记</p>
+
+<h1 id="photoshop">Photoshop切图</h1>
+
+<p>什么是切图：   </p>
+
+<blockquote>
+  <ul>
+  <li>设计稿中切出网页素材 （常指psd文件的素材切出保存为.jpg和.png格式）   </li>
+  <li>编写代码， 引入切出的background图片（HTML中常用img选择器；css中常用background图片，引入一个合并图，再用position定位出来）</li>
+  </ul>
+</blockquote>
+
+<hr>
+
+<h2 id="ps">使用ps工具</h2>
+
+<ol>
+<li>在打开photoshop后首先更改ps的单位与标尺，通过<strong><em>编辑--首选项--单位与标尺</em></strong> 菜单将标尺改为 <strong>像素</strong>。像素是我们经常使用的标准单位。   </li>
+<li>常用的面板包括五个： <strong><em>工具， 选项，图层，历史记录，及信息面板</em></strong>  打开这些窗口后，可以通过设置 <strong>窗口--工作区--新建--保存设置好的工作区</strong> 来保存自己的设置。 <br>
+<strong>Note:</strong> <br>
+(1) 信息面板的快捷键为F8，主要功能是可以与矩形选框相结合，做测量工作，可以测量<strong>颜色，位置，尺寸</strong>信息。 <br>
+(2) 历史记录面板可以回退。 Ctrl + Z可以回退一步，Ctrl+Alt+z则是一步步往前撤销。还有一个方式是直接在历史记录面板中点击想要回退到的某一个结点。 <br>
+(3) 工具面板中包括 <strong><em>移动工具</em></strong>（要勾选"自动选择"，选择"图层"而不是"组"），<strong><em>矩形选框工具，魔棒工具，裁剪及切片工具，缩放工具</em></strong>（Ctrl+加号/减号，或 Ctrl+滚轮，Ctrl+1直接缩放至100%） <br>
+(4) 使用时要通过"视图"菜单标选<strong><em>显示额外内容</em></strong>； <br>
+(5) 关于对齐，移动图层时，靠近边缘或其他图层时会有吸附力； <br>
+(6) 标尺的快捷键 <strong><em>Ctrl+R *</em></strong><em>, 参考线调用的快捷键<strong></strong></em><strong>Ctrl+; *</strong> </li>
+</ol>
+
+<h2 id="ps">PS图片测量及取色</h2>
+
+<h4 id=""><strong>测量</strong></h4>
+
+<p>在测量时，使画布尽可能大，以便测量的数据更精准。 <br>
+(1) 测量图片大小，可以用<strong><em>矩形选框</em></strong>工具，画出一个嵌套的矩形，在信息面板中查看矩形的长宽； <br>
+(2) 测量文字字号大小。 若文字为单独的图层，<strong><em>单击文字--单击图层--选项区会显示字号</em></strong>； 若不为单独的图层， 则用<strong><em>矩形选框</em></strong>工具，但是注意不同字体在测量时可能有误差。 <br>
+(3) 测量文字间行高。方法一：点击文字--图层--文件夹图标--工具栏行高； 方法二： 用<strong><em>矩形选框</em></strong>工具，从第一行文字下部到第二行文字下部的距离则为行高。 <br>
+(4) 当我们既想选择一个很大的区域测量其宽度，又想要放大画布该怎么办？  在整个区域左边画一个小矩形框，在区域最右边画一个小矩形框，再用<strong><em>查看工具</em></strong>显示出两个矩形框的距离和宽，就是大区域的宽。</p>
+
+<h4 id=""><strong>取色</strong></h4>
+
+<p>(1) 常用工具为<strong><em>拾色器</em></strong>和<strong><em>吸管</em></strong>。 <br>
+(2) 获取文字颜色：若文字在单独图层，则点击文字后，选中图层查看图层信息。 若文字不在单独图层，或要获取边框颜色时，<strong><em>放大画布，吸取颜色</em></strong>。 note:若单独图层的文字有其他叠加效果，则还是直接吸取颜色。 <br>
+(3) 如何确定某一区域是否为纯色？ 可以用拾色器不断吸取该区域内的不同位置，可以看到数值不断变化，则证明不为纯色。 <br>
+(4) 如何确定某一区域的颜色是否为线性渐变？ 用<strong><em>移动工具</em></strong>选中图层，<strong><em>魔棒工具</em></strong>点击后会自动选择一条容差相同的区域。</p>
+
+<h2 id="">切图</h2>
+
+<h4 id=""><strong>哪些图片要切</strong></h4>
+
+<ul>
+<li>修饰性的：background属性--图标、logo、有特殊效果的按钮、文字、非纯色背景等。（一般存为png格式）</li>
+<li>内容性的：HTML中的img，banner，广告，配图等。（一般存为jpg格式）<strong><em>内容性图片通常不用切出，只需要测量大小后占位</em></strong>   </li>
+</ul>
+
+<h4 id=""><strong>步骤</strong></h4>
+
+<p>1.若要切图片为独立图层，则<strong><em>隐藏文字，只留图层</em></strong>；若要切图片为已被合并的图层，则用<strong><em>矩形选框</em></strong>选中该图，选择<strong><em>自由变换</em></strong>工具中的<strong><em>拉伸</em></strong> 或者 <strong><em>移动工具</em></strong>+<strong><em>Alt</em></strong> + <strong><em>拉伸</em></strong>+ shift（保持水平）； <br>
+2.操作PNG8图片时，<strong><em>先合并可见图层</em></strong>。当选区不规则时，先用<strong><em>矩形选框</em></strong>，再用<strong><em>魔棒</em></strong>工具+<strong><em>Alt</em></strong>去除多余部分。 <br>
+3.在X轴方向上平铺时，需要充满新建画布的宽。   </p>
+
+<h4 id=""><strong>活动页切片</strong></h4>
+
+<p>拉参考线：把网页平分为几部分；选择切片工具：在crop工具下；点击"基于参考线的切片"按钮。     </p>
+
+<h2 id="">保存和维护</h2>
+
+<h4 id=""><strong>保存</strong></h4>
+
+<ul>
+<li>若需要的内容是已经被合并在一起的情况：矩形——魔棒-----Ctrl + C —-Ctrl + N ——Ctrl +V 复制，新建，粘贴 到新的文件   </li>
+<li>若需要的内容在独立图层，新建文件后，直接把该图拖入新文件</li>
+<li>存储为web所用格式——窗口 Alt + Shift + Ctrl +S   (快捷键可以提高效率)  </li>
+<li>保存类型：</li>
+<li>JPG： 适合色彩丰富且无透明要求的图片；品质一般设为60-80之间，目的是一方面保留一定图片品质，同时缩小图片大小以便于网络传输；</li>
+<li>PNG8：适合色彩不太丰富的图片，有或无透明要求均可；图片大小比较小，适合网络传输；在保存时注意杂边选为无，选无仿色，选好后可以保存设置留着以后用；</li>
+<li>PNG24：适合半透明格式，因为PNG24不会压缩图片，因此一方面图片会保留原品质和色彩，另一方面大小会相对较大。</li>
+<li>ps. 保留一份PSD： 便于后期维护，保留原图质量；   </li>
+</ul>
+
+<h4 id=""><strong>修改、维护</strong></h4>
+
+<ol>
+<li>更改画布大小：图像—-画布大小 （PS.定位选在左上角）</li>
+<li>移动图标：若为独立图层，用移动工具拖动；若为非独立图层，矩形选框选中，再用移动工具拖动；若想把两个图标分开为两个图层，选中后crlt + X剪切，再ctrl+v粘贴，就已经是分开图层了</li>
+<li>减小画布：选取工具选中需要的区域，再裁剪（图像—裁剪）； 直接用裁剪工具</li>
+<li>维护PNG8格式时，更改从索引颜色格式到RGB，以防丢失颜色信息：图像—模式—RGB；    </li>
+</ol>
+
+<h4 id=""><strong>图片优化与合并</strong></h4>
+
+<p>使用背景图： <br>
+HTML： <code>&lt;button class=“u-btn”&gt;click me &lt;/button&gt;</code> <br>
+CSS: <code>.u-btn{background:url(images/btn.png) no-repeat 0 0;}</code>
+    <code>.u-btn{background:url(images/sprite.png) no-repeat 0 -50;}</code>(用于图标合并在一张图里的情况，相当于图片向上移动了50px)    </p>
+
+<h4 id=""><strong>图片合并方案</strong></h4>
+
+<ul>
+<li>Sprite拼图：  <strong><em>优点</em></strong>：减少网络请求，提升网页加载速度；</li>
+<li>大小与质量：二者取平衡；   </li>
+<li>压缩工具：无损 Minimage（图片大小无明显影响）有损Tinypng(图片大小有明显改变)</li>
+<li>合并排列：图片之间必须保留空隙（可维护性以便后续的改变，并且给css代码保留一定误差空隙即容错性）  （对于具体要保留多大的空隙呢，并没有一个明确的数值，遵循的一个宗旨就是保留的空隙足够后期维护就可以了。如果是小图标，留的空隙可适当小一些，一般20像素左右；那如果是大图标，要留的空隙就要大一点，因为大图标在调整的时候，影响到的空间也会比较大。）</li>
+<li>排列方式：横向排列，纵向排列   </li>
+<li>合并： <br>
+(1) 同属一个模块的图片进行合并； <br>
+(2) 大小相近的图片合并（利于利用空间）； <br>
+(3) 色彩相近的图片合并（使图片大小较小） <br>
+(4) 推荐：只本页用到的图片合并（后面的页面不用再加载这个图片）； <br>
+(5) 有状态的图标合并（两个状态的图标差别只是x距离而已，便于后续操作） <br>
+<strong><em>IE6不支持PNG24半透明或者CSS新性能，则存两份图片</em></strong></li>
+</ul>
+<!-- content end -->
+</div>
+<br>
+<br>
+    <div id="disqus_thread"></div>
+	<div class="footer">
+		<p>© Copyright 2014 by isnowfy, Designed by isnowfy</p>
+	</div>
+</div>
+<script src="main.js"></script>
+<script id="content" type="text/mustache">
+    <h1>{{title}}</h1>
+    <div class="tag">
+    {{date}}
+    {{#tags}}
+    <a href="/#/tag/{{name}}">#{{name}}</a>
+    {{/tags}}
+    </div>
+</script>
+<script id="pagesTemplate" type="text/mustache">
+    {{#pages}}
+    <li>
+        <a href="{{path}}">{{title}}</a>
+    </li>
+    {{/pages}}
+</script>
+<script>
+$(document).ready(function() {
+    $.ajax({
+        url: "main.json",
+        type: "GET",
+        dataType: "json",
+        success: function(data) {
+            $("#title").html(data.name);
+            var pagesTemplate = Hogan.compile($("#pagesTemplate").html());
+            var pagesHtml = pagesTemplate.render({"pages": data.pages});
+            $("#pages").append(pagesHtml);
+            //path
+            var path = "Photoshop.html";
+            //path end
+            var now = 0;
+            for (var i = 0; i < data.posts.length; ++i)
+                if (path == data.posts[i].path)
+                    now = i;
+            var post = data.posts[now];
+            var tmp = post.tags.split(" ");
+            var tags = [];
+            for (var i = 0; i < tmp.length; ++i)
+                if (tmp[i].length > 0)
+                    tags.push({"name": tmp[i]});
+            var contentTemplate = Hogan.compile($("#content").html());
+            var contentHtml = contentTemplate.render({"title": post.title, "tags": tags, "date": post.date});
+            $("#main").prepend(contentHtml);
+            if (data.disqus_shortname.length > 0) {
+                var disqus_shortname = data.disqus_shortname;
+                (function() {
+                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+            }
+        }
+    });
+});
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ["\\(", "\\)"]], processEscapes: true}});
+</script>
+</body>
+</html>
