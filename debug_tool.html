@@ -1,0 +1,221 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="Keywords" content="blog"/>
+    <meta name="Description" content="blog"/>
+    <title>Simple</title>
+    <link rel="shortcut icon" href="/static/favicon.png"/>
+    <link rel="stylesheet" type="text/css" href="/main.css" />
+</head>
+<body>
+<div class="main">
+    <div class="header">
+    	<ul id="pages">
+            <li><a href="/">home</a></li>
+            <li><a href="/#/tags">tags</a></li>
+            <li><a href="/#/archive">archive</a></li>
+    	</ul>
+    </div>
+	<div class="wrap-header">
+	<h1>
+    <a href="/" id="title"></a>
+	</h1>
+	</div>
+<div id="md" style="display: none;">
+<!-- markdown -->
+##**开发页面的工具：**   
+
+- 文本编辑器：Sublime, Notepad ++, EditPlus
+
+- IDE集成开发环境:
+集成了js调试工具。
+
+>推荐sublime Text的理由:   
+跨平台，启动快；   
+多行选择，方便操作；   
+使用插件;   
+ snippets(省去了一些快捷键的操作)；    
+支持VIM兼容模式；
+
+***常用快捷键***：   
+1. 查找 Ctrl +P + : 行号 ——定位到行；(Ctrl + G)   
+2.  Ctrl +P + @ 符号 ——定位到具体符号（选择器等）；(Ctrl + R)   
+3.  Ctrl +P + # 关键字 ——定位到具体关键字；(Ctrl + ;)   
+4. 命令面板 Ctrl + Shift + P 模糊匹配；Ctrl D/Ctrl+shift+L（多行选中）;   
+5. Alt + F3选中全部变量；
+
+***常用插件***：
+(先要安装Package Control;)   
+Emmet   
+DocBlockr;   
+SideBarEnhancements
+Terminal
+
+***常用插件的快捷使用方式***：       
+  
+- Ctrl N新建文件----- ！+Tab 页面框架就搭建好了---- div#nav>ul>li?4>a  按Tab   
+<img a=></img>
+   
+- 通过TOOL—-new snippet新建代码片段，添加代码片段关键字：```<tabTrigger>hello</tabTrigger>```,添加代码片段使用的文件范围： ```<scope>text.html</scope>``` —-保存
+在想引入的文件里输入关键字+回车就直接引入代码片段；   
+   
+- 在preference---user setting中，把ignored_packages中的内容删掉，若没有这一段代码，则添加一个空的代码段：```"ignored_packages":[   ] ```   
+
+##开发页面的工具   
+以chrom 为例：   
+F12   
+   
+- Elements: HTML + CSS; —-曾删查改
+- Network: 可以看到网站的网络请求，与后端调试接口时使用
+- Sources:可以看到网站所有的资源（css,图片，js等）可以设置断点来调试js
+- Console: 可以直接写js代码调试，也会输出一些内容，与source面板结合
+- resources：网站的本地资源（cookie, storage等）
+- timeline, profiles, audits: 调试页面性能；
+
+- 放大镜—-选中想查看的元素—可以直接从Elements面板修改
+- 加号—新加规则
+
+
+IE：   
+IE8以上版本 自带调试工具   
+IE6：安装IETester查看效果 ； 如果要调试，需要安装原生IE6浏览器和IEdevelopToolBar;   
+仿真功能---可以选择查看调试的版本
+
+<!-- markdown end -->
+</div>
+<div class="entry" id="main">
+<!-- content -->
+<h2 id=""><strong>开发页面的工具：</strong></h2>
+
+<ul>
+<li><p>文本编辑器：Sublime, Notepad ++, EditPlus</p></li>
+<li><p>IDE集成开发环境:
+集成了js调试工具。</p></li>
+</ul>
+
+<blockquote>
+  <p>推荐sublime Text的理由: <br>
+  跨平台，启动快； <br>
+  多行选择，方便操作； <br>
+  使用插件; <br>
+   snippets(省去了一些快捷键的操作)； <br>
+  支持VIM兼容模式；</p>
+</blockquote>
+
+<p><strong><em>常用快捷键</em></strong>： <br>
+1. 查找 Ctrl +P + : 行号 ——定位到行；(Ctrl + G) <br>
+2.  Ctrl +P + @ 符号 ——定位到具体符号（选择器等）；(Ctrl + R) <br>
+3.  Ctrl +P + # 关键字 ——定位到具体关键字；(Ctrl + ;) <br>
+4. 命令面板 Ctrl + Shift + P 模糊匹配；Ctrl D/Ctrl+shift+L（多行选中）; <br>
+5. Alt + F3选中全部变量；</p>
+
+<p><strong><em>常用插件</em></strong>：
+(先要安装Package Control;) <br>
+Emmet <br>
+DocBlockr; <br>
+SideBarEnhancements
+Terminal</p>
+
+<p><strong><em>常用插件的快捷使用方式</em></strong>：       </p>
+
+<ul>
+<li><p>Ctrl N新建文件----- ！+Tab 页面框架就搭建好了---- div#nav&gt;ul&gt;li?4&gt;a  按Tab <br>
+<img a=""></p></li>
+<li><p>通过TOOL—-new snippet新建代码片段，添加代码片段关键字：<code>&lt;tabTrigger&gt;hello&lt;/tabTrigger&gt;</code>,添加代码片段使用的文件范围： <code>&lt;scope&gt;text.html&lt;/scope&gt;</code> —-保存
+在想引入的文件里输入关键字+回车就直接引入代码片段；   </p></li>
+<li><p>在preference---user setting中，把ignored_packages中的内容删掉，若没有这一段代码，则添加一个空的代码段：<code>"ignored_packages":[   ]</code>   </p></li>
+</ul>
+
+<h2 id="">开发页面的工具</h2>
+
+<p>以chrom 为例： <br>
+F12   </p>
+
+<ul>
+<li>Elements: HTML + CSS; —-曾删查改</li>
+<li>Network: 可以看到网站的网络请求，与后端调试接口时使用</li>
+<li>Sources:可以看到网站所有的资源（css,图片，js等）可以设置断点来调试js</li>
+<li>Console: 可以直接写js代码调试，也会输出一些内容，与source面板结合</li>
+<li>resources：网站的本地资源（cookie, storage等）</li>
+<li><p>timeline, profiles, audits: 调试页面性能；</p></li>
+<li><p>放大镜—-选中想查看的元素—可以直接从Elements面板修改</p></li>
+<li>加号—新加规则</li>
+</ul>
+
+<p>IE： <br>
+IE8以上版本 自带调试工具 <br>
+IE6：安装IETester查看效果 ； 如果要调试，需要安装原生IE6浏览器和IEdevelopToolBar; <br>
+仿真功能---可以选择查看调试的版本</p>
+<!-- content end -->
+</div>
+<br>
+<br>
+    <div id="disqus_thread"></div>
+	<div class="footer">
+		<p>© Copyright 2014 by isnowfy, Designed by isnowfy</p>
+	</div>
+</div>
+<script src="main.js"></script>
+<script id="content" type="text/mustache">
+    <h1>{{title}}</h1>
+    <div class="tag">
+    {{date}}
+    {{#tags}}
+    <a href="/#/tag/{{name}}">#{{name}}</a>
+    {{/tags}}
+    </div>
+</script>
+<script id="pagesTemplate" type="text/mustache">
+    {{#pages}}
+    <li>
+        <a href="{{path}}">{{title}}</a>
+    </li>
+    {{/pages}}
+</script>
+<script>
+$(document).ready(function() {
+    $.ajax({
+        url: "main.json",
+        type: "GET",
+        dataType: "json",
+        success: function(data) {
+            $("#title").html(data.name);
+            var pagesTemplate = Hogan.compile($("#pagesTemplate").html());
+            var pagesHtml = pagesTemplate.render({"pages": data.pages});
+            $("#pages").append(pagesHtml);
+            //path
+            var path = "debug_tool.html";
+            //path end
+            var now = 0;
+            for (var i = 0; i < data.posts.length; ++i)
+                if (path == data.posts[i].path)
+                    now = i;
+            var post = data.posts[now];
+            var tmp = post.tags.split(" ");
+            var tags = [];
+            for (var i = 0; i < tmp.length; ++i)
+                if (tmp[i].length > 0)
+                    tags.push({"name": tmp[i]});
+            var contentTemplate = Hogan.compile($("#content").html());
+            var contentHtml = contentTemplate.render({"title": post.title, "tags": tags, "date": post.date});
+            $("#main").prepend(contentHtml);
+            if (data.disqus_shortname.length > 0) {
+                var disqus_shortname = data.disqus_shortname;
+                (function() {
+                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+            }
+        }
+    });
+});
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ["\\(", "\\)"]], processEscapes: true}});
+</script>
+</body>
+</html>
