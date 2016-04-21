@@ -39,7 +39,54 @@ body部分中又包括了sidebar, 和主体内容部分。 ps:在html5之前，�
 - ```<article>```:   主体内容，独立的可重复的结构：评论，文章等。可以嵌套，表示相关（博客评论嵌套在博客文章当中）
 ```<section>```: 内容的专题组，一般带一个标题，相邻的section一般有相关性。
 - ```<aside>```: 侧边栏，广告，工具性内容。
-- ```<footer>```:表示章节尾部：版权信息，相关链接等。也可以用于独立内容的尾部。
+- ```<footer>```:表示章节尾部：版权信息，相关链接等。也可以用于独立内容的尾部。    
+
+##和文本相关的标签   
+-  **超链接 ```<a></a>```**：作用：   
+*创建指向另一个文档的链接：*<a href = "http://tech.163.com/">technique</a>  <a href = "http://ent.163.com/movie/" target = "_self">movie</a>     <a href = "http://money.163.com" target = "_blank">finance</a>   
+ ```<a href = "http://tech.163.com/">technique</a>```   ```<a href = "http://ent.163.com/movie/" target = "_self">movie</a>```    
+    ```<a href ="http://money.163.com" target ="_blank">finance</a> ```   
+跳转方式可以有target属性控制，若target = _self, 则在当前的页面显示，若为target = _blank, 则在新建的页面显示。若不写target,则默认在当前页面显示。target 也可以是一个名称，则页面会在目标的名称中打开：   
+ ```< a href ="./site/js.html" target ="inner" > </a>  <iframe frame border="0" name="inner" ></iframe> ```   
+*创建文档内部的锚点*:   
+ ```<a href="#pay">buy</a>``` ```<div id="pay">buy</div>``` 注意链接值要和id值一直，才能跳转到相应内容（跳转后，地址栏也会加上#值。也可以用这个功能完成『回到顶部』；   
+*连接到Email地址*：    
+ ```<a href="mailto:shy@sina.com">contact</a>``` 类似功能是在手机上点击手机号码时自动跳出拨号软件，代码如下： ```<a href="tel:111111">111111</a>``` **ps:邮箱地址可以多个，用逗号分隔**。       
+-   **强调一些内容**：   
+ ```<strong>```:重要性上的强调，比em更强烈，粗体  ```<em>``` ：语义上的强调，斜体。   
+有些时候我们并不是想强调某个内容，而是想让它有不一样的样式。一般就会把它放在```<span>```标签中。span标签本身没有任何语义，但可以结合class赋予它样式。   
+- **换行**   
+ ```一行文字<br>第二行 ```   
+- 引用：   
+ ```cite```引用出处（会变成斜体）；```q```引用某一段文字，说的话。（会加上引号）```code```代码；```b```摘要中的关键字，产品名称等（会变成粗体）；```i```斜体表示的内容，技术术语等。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- markdown end -->
 </div>
 <div class="entry" id="main">
@@ -64,7 +111,29 @@ body部分中又包括了sidebar, 和主体内容部分。 ps:在html5之前，�
 <li><code>&lt;article&gt;</code>:   主体内容，独立的可重复的结构：评论，文章等。可以嵌套，表示相关（博客评论嵌套在博客文章当中）
 <code>&lt;section&gt;</code>: 内容的专题组，一般带一个标题，相邻的section一般有相关性。</li>
 <li><code>&lt;aside&gt;</code>: 侧边栏，广告，工具性内容。</li>
-<li><code>&lt;footer&gt;</code>:表示章节尾部：版权信息，相关链接等。也可以用于独立内容的尾部。</li>
+<li><code>&lt;footer&gt;</code>:表示章节尾部：版权信息，相关链接等。也可以用于独立内容的尾部。    </li>
+</ul>
+
+<h2 id="">和文本相关的标签</h2>
+
+<ul>
+<li><strong>超链接 <code>&lt;a&gt;&lt;/a&gt;</code></strong>：作用： <br>
+<em>创建指向另一个文档的链接：</em><a href="http://tech.163.com/">technique</a>  <a href="http://ent.163.com/movie/" target="_self">movie</a>     <a href="http://money.163.com" target="_blank">finance</a> <br>
+<code>&lt;a href = "http://tech.163.com/"&gt;technique&lt;/a&gt;</code>   <code>&lt;a href = "http://ent.163.com/movie/" target = "_self"&gt;movie&lt;/a&gt;</code> <br>
+<code>&lt;a href ="http://money.163.com" target ="_blank"&gt;finance&lt;/a&gt;</code> <br>
+跳转方式可以有target属性控制，若target = _self, 则在当前的页面显示，若为target = _blank, 则在新建的页面显示。若不写target,则默认在当前页面显示。target 也可以是一个名称，则页面会在目标的名称中打开： <br>
+<code>&lt; a href ="./site/js.html" target ="inner" &gt; &lt;/a&gt;  &lt;iframe frame border="0" name="inner" &gt;&lt;/iframe&gt;</code> <br>
+<em>创建文档内部的锚点</em>: <br>
+<code>&lt;a href="#pay"&gt;buy&lt;/a&gt;</code> <code>&lt;div id="pay"&gt;buy&lt;/div&gt;</code> 注意链接值要和id值一直，才能跳转到相应内容（跳转后，地址栏也会加上#值。也可以用这个功能完成『回到顶部』； <br>
+<em>连接到Email地址</em>： <br>
+<code>&lt;a href="mailto:shy@sina.com"&gt;contact&lt;/a&gt;</code> 类似功能是在手机上点击手机号码时自动跳出拨号软件，代码如下： <code>&lt;a href="tel:111111"&gt;111111&lt;/a&gt;</code> <strong>ps:邮箱地址可以多个，用逗号分隔</strong>。       </li>
+<li><strong>强调一些内容</strong>： <br>
+<code>&lt;strong&gt;</code>:重要性上的强调，比em更强烈，粗体  <code>&lt;em&gt;</code> ：语义上的强调，斜体。 <br>
+有些时候我们并不是想强调某个内容，而是想让它有不一样的样式。一般就会把它放在<code>&lt;span&gt;</code>标签中。span标签本身没有任何语义，但可以结合class赋予它样式。   </li>
+<li><strong>换行</strong> <br>
+<code>一行文字&lt;br&gt;第二行</code>   </li>
+<li>引用： <br>
+<code>cite</code>引用出处（会变成斜体）；<code>q</code>引用某一段文字，说的话。（会加上引号）<code>code</code>代码；<code>b</code>摘要中的关键字，产品名称等（会变成粗体）；<code>i</code>斜体表示的内容，技术术语等。</li>
 </ul>
 <!-- content end -->
 </div>
