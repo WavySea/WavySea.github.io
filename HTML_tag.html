@@ -55,13 +55,81 @@ body部分中又包括了sidebar, 和主体内容部分。 ps:在html5之前，�
 -   **强调一些内容**：   
  ```<strong>```:重要性上的强调，比em更强烈，粗体  ```<em>``` ：语义上的强调，斜体。   
 有些时候我们并不是想强调某个内容，而是想让它有不一样的样式。一般就会把它放在```<span>```标签中。span标签本身没有任何语义，但可以结合class赋予它样式。   
-- **换行**   
+- **换行**  ： 
  ```一行文字<br>第二行 ```   
-- 引用：   
+- **引用**：   
  ```cite```引用出处（会变成斜体）；```q```引用某一段文字，说的话。（会加上引号）```code```代码；```b```摘要中的关键字，产品名称等（会变成粗体）；```i```斜体表示的内容，技术术语等。
 
 
+##组合内容相关的标签   
+- 分区：```<div>```   
+是其他标签的容器；
+- 段落：```<p>```   
+新闻相关的内容，或者把一大篇文章的每个段落分别放在p标签里。
+- 列表：（列表均可以嵌套）      
+**无序列表**：   
+<ul>   
+          <li>列表项1</li>   
+          <li>列表项2</li>    
+          <li>列表项3</li>   </ul>
+ ```<ul>   
+          <li>列表项1</li>   
+          <li>列表项2</li>    
+          <li>列表项3</li>   </ul>```    样式可以通过css来改变。   
 
+   
+   **有序列表：**例如排行榜。  
+<ol>   
+          <li>列表项1</li>   
+          <li>列表项2</li>    
+          <li>列表项3</li>   </ol> 
+  ```<ol>   
+          <li>列表项1</li>   
+          <li>列表项2</li>    
+          <li>列表项3</li>   </ol>```   如果想改变编号样式，可以用type, 如```<ol type="a" start="2">```即变成用a,b,c来编号, 并且从b开始。
+
+**自定义列表**：一系列 name value值对的列表，元素主题和信息列表，问答列表 ；dt是定义，dd是相应的信息。dd的内容会有相应的缩进。   
+ <dl>   
+          <dt>作者</dt>   
+          <dd>Cbuck</dd>    
+          <dd>Bill</dd>  
+          <dt>出版年</dt>   
+           <dd>2007-04</dd> </dl>
+   ```<dl>   
+          <dt>作者</dt>   
+          <dd>Cbuck</dd>    
+          <dd>Bill</dd>  
+          <dt>出版年</dt>   
+           <dd>2007-04</dd> </dl>```   
+- ```<pre>```标签，盛放已经格式化的内容，可以保留里面的换行符和空格。   
+- ```<blockquote>```标签，大块的引用。其中包括了cite属性，可以引用出处。    
+
+##嵌入资源的标签    
+- img:自闭合标签。用src放图片的地址链接，alt属性描述图片的含义。当网络情况不佳，图片无法加载时，会显示alt中的文字，提高用户体验。 
+- iframe 嵌入页面（如页面顶的广告等）；   
+ ```<iframe src="http://www.163.com"></iframe>```  *需要注意的是：*当前页面的css,js和嵌入页面的是隔离的，在嵌入页面中的操作并不影响当前页面。 例如：页面中嵌入了一个播放器，我们希望页面在跳转或者其他操作的时候，这个播放器不受影响。
+- object 嵌入外部资源：    
+ <pre>```<object type="application/x-shockwave-flash">
+           <param name="movie" value="http://pdfReader.swf">
+          <param name="flashvars" value="http://book.pdf">
+  </object>```</pre> 我们也可以把播放器的地址放在data这个属性里面，但是ie8以下的浏览器并不兼容这个属性。
+- embed 嵌入外部资源：    
+ <pre>```<embed type="application/x-shockwave-flash" src="http://pdfReader.swf" width="640" height="480">  ```</pre> type属性写插入的类型。
+- video：html5中可以通过video这个标签来插入视频。因为不同浏览器对视频的支持不同，所以我们通常准备多个文件。   
+  <pre>```<video controls="controls" poster="/img/poster.jpg"> 
+   <source src="movie.mp4" type="video/mp4">
+    <source src="movie.webm" type="video/webm">
+   <source src="movie.ogg" type="video/ogg">
+    <track kind="subtitles" src="video.srt" label="English"> 您的浏览器不支持video标签。</video> ```</pre>  
+浏览器会自己选择支持的内容。如果视频的地址只有一个，那么可以直接写在video src的属性中。controls属性可以控制浏览器进度条的显示，poster控制封面（如果没有，会显示视频的第一帧），track属性引入视频的字幕。如果希望一进入视频就开始自动播放，则可以在video后面加入 autoplay属性。视频播放完成后会自动停止在最后一帧，loop属性可以让视频自动的循环播放。
+- audio： 与video标签类似。
+- canvas/svg：嵌入图像。canvas基于像素，可以利用脚本来绘制图像。svg是矢量的，提供了一系列图形，如圆形，方形。如果是高保真的图形，可以使用svg。对于一些比较复杂的图形，比如实时数据展示，游戏等，可以用canvas来实现。  
+- map/area：定义热点区域。利于点击在不同区域，会跳转到不同页面。   
+ <pre>```<img src="http://..." width="1090" height="995" usemap="#Map2">
+ <map name="Map2">
+      <area shape="rect" coords="669,75,1075,682" href="xiupin.com/..." target="_blank">
+      <area shape="rect" coords="26,93,391,337" href="xiupin.com/..." target="_blank">
+       </map> ```</pre>    
 
 
 
@@ -130,10 +198,89 @@ body部分中又包括了sidebar, 和主体内容部分。 ps:在html5之前，�
 <li><strong>强调一些内容</strong>： <br>
 <code>&lt;strong&gt;</code>:重要性上的强调，比em更强烈，粗体  <code>&lt;em&gt;</code> ：语义上的强调，斜体。 <br>
 有些时候我们并不是想强调某个内容，而是想让它有不一样的样式。一般就会把它放在<code>&lt;span&gt;</code>标签中。span标签本身没有任何语义，但可以结合class赋予它样式。   </li>
-<li><strong>换行</strong> <br>
+<li><strong>换行</strong>  ： 
 <code>一行文字&lt;br&gt;第二行</code>   </li>
-<li>引用： <br>
+<li><strong>引用</strong>： <br>
 <code>cite</code>引用出处（会变成斜体）；<code>q</code>引用某一段文字，说的话。（会加上引号）<code>code</code>代码；<code>b</code>摘要中的关键字，产品名称等（会变成粗体）；<code>i</code>斜体表示的内容，技术术语等。</li>
+</ul>
+
+<h2 id="">组合内容相关的标签</h2>
+
+<ul>
+<li>分区：<code>&lt;div&gt;</code> <br>
+是其他标签的容器；</li>
+<li>段落：<code>&lt;p&gt;</code> <br>
+新闻相关的内容，或者把一大篇文章的每个段落分别放在p标签里。</li>
+<li>列表：（列表均可以嵌套） <br>
+<strong>无序列表</strong>：   </li>
+</ul>
+
+<ul>   
+          <li>列表项1</li>   
+          <li>列表项2</li>    
+          <li>列表项3</li>   </ul>
+
+<p><code>&lt;ul&gt; <br>
+          &lt;li&gt;列表项1&lt;/li&gt; <br>
+          &lt;li&gt;列表项2&lt;/li&gt; <br>
+          &lt;li&gt;列表项3&lt;/li&gt;   &lt;/ul&gt;</code>    样式可以通过css来改变。   </p>
+
+<p><strong>有序列表：</strong>例如排行榜。  </p>
+
+<ol>   
+          <li>列表项1</li>   
+          <li>列表项2</li>    
+          <li>列表项3</li>   </ol> 
+
+<p><code>&lt;ol&gt; <br>
+          &lt;li&gt;列表项1&lt;/li&gt; <br>
+          &lt;li&gt;列表项2&lt;/li&gt; <br>
+          &lt;li&gt;列表项3&lt;/li&gt;   &lt;/ol&gt;</code>   如果想改变编号样式，可以用type, 如<code>&lt;ol type="a" start="2"&gt;</code>即变成用a,b,c来编号, 并且从b开始。</p>
+
+<p><strong>自定义列表</strong>：一系列 name value值对的列表，元素主题和信息列表，问答列表 ；dt是定义，dd是相应的信息。dd的内容会有相应的缩进。 <br>
+ </p><dl> <br>
+          <dt>作者</dt> <br>
+          <dd>Cbuck</dd> <br>
+          <dd>Bill</dd> <br>
+          <dt>出版年</dt> <br>
+           <dd>2007-04</dd> </dl>
+   <code>&lt;dl&gt; <br>
+          &lt;dt&gt;作者&lt;/dt&gt; <br>
+          &lt;dd&gt;Cbuck&lt;/dd&gt; <br>
+          &lt;dd&gt;Bill&lt;/dd&gt; <br>
+          &lt;dt&gt;出版年&lt;/dt&gt; <br>
+           &lt;dd&gt;2007-04&lt;/dd&gt; &lt;/dl&gt;</code> <br>
+- <code>&lt;pre&gt;</code>标签，盛放已经格式化的内容，可以保留里面的换行符和空格。 <br>
+- <code>&lt;blockquote&gt;</code>标签，大块的引用。其中包括了cite属性，可以引用出处。    <p></p>
+
+<h2 id="">嵌入资源的标签</h2>
+
+<ul>
+<li>img:自闭合标签。用src放图片的地址链接，alt属性描述图片的含义。当网络情况不佳，图片无法加载时，会显示alt中的文字，提高用户体验。 </li>
+<li>iframe 嵌入页面（如页面顶的广告等）； <br>
+<code>&lt;iframe src="http://www.163.com"&gt;&lt;/iframe&gt;</code>  <em>需要注意的是：</em>当前页面的css,js和嵌入页面的是隔离的，在嵌入页面中的操作并不影响当前页面。 例如：页面中嵌入了一个播放器，我们希望页面在跳转或者其他操作的时候，这个播放器不受影响。</li>
+<li>object 嵌入外部资源： <br>
+<pre><code>&lt;object type="application/x-shockwave-flash"&gt;
+       &lt;param name="movie" value="http://pdfReader.swf"&gt;
+      &lt;param name="flashvars" value="http://book.pdf"&gt;
+&lt;/object&gt;</code></pre> 我们也可以把播放器的地址放在data这个属性里面，但是ie8以下的浏览器并不兼容这个属性。</li>
+<li>embed 嵌入外部资源： <br>
+<pre><code>&lt;embed type="application/x-shockwave-flash" src="http://pdfReader.swf" width="640" height="480"&gt;</code></pre> type属性写插入的类型。</li>
+<li>video：html5中可以通过video这个标签来插入视频。因为不同浏览器对视频的支持不同，所以我们通常准备多个文件。 <br>
+<pre><code>&lt;video controls="controls" poster="/img/poster.jpg"&gt; 
+&lt;source src="movie.mp4" type="video/mp4"&gt;
+&lt;source src="movie.webm" type="video/webm"&gt;
+&lt;source src="movie.ogg" type="video/ogg"&gt;
+&lt;track kind="subtitles" src="video.srt" label="English"&gt; 您的浏览器不支持video标签。&lt;/video&gt;</code></pre> <br>
+浏览器会自己选择支持的内容。如果视频的地址只有一个，那么可以直接写在video src的属性中。controls属性可以控制浏览器进度条的显示，poster控制封面（如果没有，会显示视频的第一帧），track属性引入视频的字幕。如果希望一进入视频就开始自动播放，则可以在video后面加入 autoplay属性。视频播放完成后会自动停止在最后一帧，loop属性可以让视频自动的循环播放。</li>
+<li>audio： 与video标签类似。</li>
+<li>canvas/svg：嵌入图像。canvas基于像素，可以利用脚本来绘制图像。svg是矢量的，提供了一系列图形，如圆形，方形。如果是高保真的图形，可以使用svg。对于一些比较复杂的图形，比如实时数据展示，游戏等，可以用canvas来实现。  </li>
+<li>map/area：定义热点区域。利于点击在不同区域，会跳转到不同页面。 <br>
+<pre><code>&lt;img src="http://..." width="1090" height="995" usemap="#Map2"&gt;
+&lt;map name="Map2"&gt;
+  &lt;area shape="rect" coords="669,75,1075,682" href="xiupin.com/..." target="_blank"&gt;
+  &lt;area shape="rect" coords="26,93,391,337" href="xiupin.com/..." target="_blank"&gt;
+   &lt;/map&gt;</code></pre>    </li>
 </ul>
 <!-- content end -->
 </div>
