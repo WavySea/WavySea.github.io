@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="Keywords" content="blog"/>
+    <meta name="Description" content="blog"/>
+    <title>Simple</title>
+    <link rel="shortcut icon" href="/static/favicon.png"/>
+    <link rel="stylesheet" type="text/css" href="/main.css" />
+</head>
+<body>
+<div class="main">
+    <div class="header">
+    	<ul id="pages">
+            <li><a href="/">home</a></li>
+            <li><a href="/#/tags">tags</a></li>
+            <li><a href="/#/archive">archive</a></li>
+    	</ul>
+    </div>
+	<div class="wrap-header">
+	<h1>
+    <a href="/" id="title"></a>
+	</h1>
+	</div>
+<div id="md" style="display: none;">
+<!-- markdown -->
+[HTML5 period table](http://www.wfuns.com/case/case_20141129.html)    
+##和文档章节相关的标签   
+在head当中的标签是用户一般不会看到的标签；   
+*从body 标签开始，就是用户会看到的内容。*   
+>**header, nav, aside, article, section, footer, hx都是html5新增的标签。主要用来表示页面中的一些章节结构**   
+
+文档的章节从大块儿上分，通常是三部分：header, body 和footer。   
+body部分中又包括了sidebar, 和主体内容部分。 ps:在html5之前，通常都是用div来分隔这些区域。在html5中用了更加语义化的标签来表示：  
+ 
+- ```<header>```:   标题，logo，搜索表单。也可以表示一些独立章节的头部。[h1-h6](http://wavysea.github.io/htmlbasics.html)。重要性的差别。
+- ```<nav>```: 导航。任何有导航性质的内容。可以有多个导航。
+- ```<article>```:   主体内容，独立的可重复的结构：评论，文章等。可以嵌套，表示相关（博客评论嵌套在博客文章当中）
+```<section>```: 内容的专题组，一般带一个标题，相邻的section一般有相关性。
+- ```<aside>```: 侧边栏，广告，工具性内容。
+- ```<footer>```:表示章节尾部：版权信息，相关链接等。也可以用于独立内容的尾部。
+<!-- markdown end -->
+</div>
+<div class="entry" id="main">
+<!-- content -->
+<p><a href="http://www.wfuns.com/case/case_20141129.html">HTML5 period table</a>    </p>
+
+<h2 id="">和文档章节相关的标签</h2>
+
+<p>在head当中的标签是用户一般不会看到的标签； <br>
+<em>从body 标签开始，就是用户会看到的内容。</em>   </p>
+
+<blockquote>
+  <p><strong>header, nav, aside, article, section, footer, hx都是html5新增的标签。主要用来表示页面中的一些章节结构</strong>   </p>
+</blockquote>
+
+<p>文档的章节从大块儿上分，通常是三部分：header, body 和footer。 <br>
+body部分中又包括了sidebar, 和主体内容部分。 ps:在html5之前，通常都是用div来分隔这些区域。在html5中用了更加语义化的标签来表示：  </p>
+
+<ul>
+<li><code>&lt;header&gt;</code>:   标题，logo，搜索表单。也可以表示一些独立章节的头部。<a href="http://wavysea.github.io/htmlbasics.html">h1-h6</a>。重要性的差别。</li>
+<li><code>&lt;nav&gt;</code>: 导航。任何有导航性质的内容。可以有多个导航。</li>
+<li><code>&lt;article&gt;</code>:   主体内容，独立的可重复的结构：评论，文章等。可以嵌套，表示相关（博客评论嵌套在博客文章当中）
+<code>&lt;section&gt;</code>: 内容的专题组，一般带一个标题，相邻的section一般有相关性。</li>
+<li><code>&lt;aside&gt;</code>: 侧边栏，广告，工具性内容。</li>
+<li><code>&lt;footer&gt;</code>:表示章节尾部：版权信息，相关链接等。也可以用于独立内容的尾部。</li>
+</ul>
+<!-- content end -->
+</div>
+<br>
+<br>
+    <div id="disqus_thread"></div>
+	<div class="footer">
+		<p>© Copyright 2014 by isnowfy, Designed by isnowfy</p>
+	</div>
+</div>
+<script src="main.js"></script>
+<script id="content" type="text/mustache">
+    <h1>{{title}}</h1>
+    <div class="tag">
+    {{date}}
+    {{#tags}}
+    <a href="/#/tag/{{name}}">#{{name}}</a>
+    {{/tags}}
+    </div>
+</script>
+<script id="pagesTemplate" type="text/mustache">
+    {{#pages}}
+    <li>
+        <a href="{{path}}">{{title}}</a>
+    </li>
+    {{/pages}}
+</script>
+<script>
+$(document).ready(function() {
+    $.ajax({
+        url: "main.json",
+        type: "GET",
+        dataType: "json",
+        success: function(data) {
+            $("#title").html(data.name);
+            var pagesTemplate = Hogan.compile($("#pagesTemplate").html());
+            var pagesHtml = pagesTemplate.render({"pages": data.pages});
+            $("#pages").append(pagesHtml);
+            //path
+            var path = "HTML_tag.html";
+            //path end
+            var now = 0;
+            for (var i = 0; i < data.posts.length; ++i)
+                if (path == data.posts[i].path)
+                    now = i;
+            var post = data.posts[now];
+            var tmp = post.tags.split(" ");
+            var tags = [];
+            for (var i = 0; i < tmp.length; ++i)
+                if (tmp[i].length > 0)
+                    tags.push({"name": tmp[i]});
+            var contentTemplate = Hogan.compile($("#content").html());
+            var contentHtml = contentTemplate.render({"title": post.title, "tags": tags, "date": post.date});
+            $("#main").prepend(contentHtml);
+            if (data.disqus_shortname.length > 0) {
+                var disqus_shortname = data.disqus_shortname;
+                (function() {
+                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+            }
+        }
+    });
+});
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ["\\(", "\\)"]], processEscapes: true}});
+</script>
+</body>
+</html>
