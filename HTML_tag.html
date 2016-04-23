@@ -131,13 +131,45 @@ body部分中又包括了sidebar, 和主体内容部分。 ps:在html5之前，�
       <area shape="rect" coords="26,93,391,337" href="xiupin.com/..." target="_blank">
        </map> ```</pre>    
 
+##表格标签   
+- caption:放置表格的标题；
+- thead：放置表头；
+- tbody: 放置表格的主要内容；
+- tfoot：放置表格的尾部；
+- tr: 表示表格的一行；其中可以嵌套th，表示为表的横向表头的单元格（第一行）或者竖向列名称的单元格（第一列）。
+- td：普通单元格；
+- ```<td colspan="3">```表示跨3列； ```<th rowspan="3">```表示跨3行。
+
+
+##表单标签   
+- form ：action 表示提交的接口地址；method:表单提交方式（一般为post）；
+- fieldset: 如果表单中要填写的内容较多，就用这个标签来做分区。分区中的标题用```<legend>```表示.
+- input：包含多种类型：type="file"; checkbox（checked会显示选中某一个选项；disabled可以禁止用户选中这个多选框; radio; text(可以不写，默认。可以用placeholder属性添加提示信息，如果有默认值则可以写在value属性，readonly属性则是用户只能看不能改)； submit/reset（按钮）。Input包含**两个重要属性**： name表示填入的数据名称，在提交到后台时，用name中的名称提取数据（同一个内容的多选框name值一致）。Value则是存入的值。   
+- button: 按钮。```<button type="submit">submit</button>```但是只是按钮，不会提交;   
+- select : 下拉选择框。（页面显示默认选择第一项，selected属性可以控制显示选中某一项）   
+ <pre>```<select id="delivery">
+        <option value="0">one</option>
+       <option value="1">two</option>
+      <option value="2">three</option>
+  </select>```</pre>     
+其中的选项可以通过```<optgroup></optgroup>```标签来分组，可以用label属性来给分组的选项命名。
+- textarea: 多行文本框。  
+- label：某个标签按钮或文本框前面的提示信息，通过for属性与其他标签中的id属性相对应。
+- hidden属性可以隐藏信息。
+- 最新的一些语义化标签：email, url, number, tel, search.浏览器会自动检测用户输入的值是否符合相应的规范。range可以出现范围选择，color可以出现拾色器。date picker (date,month,week,time,date time,datetime-local)    
 
 
 
+##语义化     
+>用正确的标签来描述页面     
 
+（图片--img; 段落--p；列表--ul。。。）  
+###作用  
+- 有利于SEO：(search engine optimization)搜索引擎的爬虫会根据语义化的标签来计算权重，使得页面和用户关键字更加匹配。高权重会使得我们的页面更早的出现在用户的搜索中。
+- 提高可访问性。页面也可能给盲人等残障人士看。他们的屏幕阅读器对不同标签会发出不同声音，因此传达不同信息的重要性，使他们更好的阅读网页内容。
+- 提高代码的可读性。语义化的标签便于多人开发维护。    
 
-
-
+ 
 
 
 
@@ -281,6 +313,54 @@ body部分中又包括了sidebar, 和主体内容部分。 ps:在html5之前，�
   &lt;area shape="rect" coords="669,75,1075,682" href="xiupin.com/..." target="_blank"&gt;
   &lt;area shape="rect" coords="26,93,391,337" href="xiupin.com/..." target="_blank"&gt;
    &lt;/map&gt;</code></pre>    </li>
+</ul>
+
+<h2 id="">表格标签</h2>
+
+<ul>
+<li>caption:放置表格的标题；</li>
+<li>thead：放置表头；</li>
+<li>tbody: 放置表格的主要内容；</li>
+<li>tfoot：放置表格的尾部；</li>
+<li>tr: 表示表格的一行；其中可以嵌套th，表示为表的横向表头的单元格（第一行）或者竖向列名称的单元格（第一列）。</li>
+<li>td：普通单元格；</li>
+<li><code>&lt;td colspan="3"&gt;</code>表示跨3列； <code>&lt;th rowspan="3"&gt;</code>表示跨3行。</li>
+</ul>
+
+<h2 id="">表单标签</h2>
+
+<ul>
+<li>form ：action 表示提交的接口地址；method:表单提交方式（一般为post）；</li>
+<li>fieldset: 如果表单中要填写的内容较多，就用这个标签来做分区。分区中的标题用<code>&lt;legend&gt;</code>表示.</li>
+<li>input：包含多种类型：type="file"; checkbox（checked会显示选中某一个选项；disabled可以禁止用户选中这个多选框; radio; text(可以不写，默认。可以用placeholder属性添加提示信息，如果有默认值则可以写在value属性，readonly属性则是用户只能看不能改)； submit/reset（按钮）。Input包含<strong>两个重要属性</strong>： name表示填入的数据名称，在提交到后台时，用name中的名称提取数据（同一个内容的多选框name值一致）。Value则是存入的值。   </li>
+<li>button: 按钮。<code>&lt;button type="submit"&gt;submit&lt;/button&gt;</code>但是只是按钮，不会提交;   </li>
+<li>select : 下拉选择框。（页面显示默认选择第一项，selected属性可以控制显示选中某一项） <br>
+<pre><code>&lt;select id="delivery"&gt;
+    &lt;option value="0"&gt;one&lt;/option&gt;
+   &lt;option value="1"&gt;two&lt;/option&gt;
+  &lt;option value="2"&gt;three&lt;/option&gt;
+&lt;/select&gt;</code></pre> <br>
+其中的选项可以通过<code>&lt;optgroup&gt;&lt;/optgroup&gt;</code>标签来分组，可以用label属性来给分组的选项命名。</li>
+<li>textarea: 多行文本框。  </li>
+<li>label：某个标签按钮或文本框前面的提示信息，通过for属性与其他标签中的id属性相对应。</li>
+<li>hidden属性可以隐藏信息。</li>
+<li>最新的一些语义化标签：email, url, number, tel, search.浏览器会自动检测用户输入的值是否符合相应的规范。range可以出现范围选择，color可以出现拾色器。date picker (date,month,week,time,date time,datetime-local)    </li>
+</ul>
+
+<h2 id="">语义化</h2>
+
+<blockquote>
+  <p>用正确的标签来描述页面     </p>
+</blockquote>
+
+<p>（图片--img; 段落--p；列表--ul。。。）  </p>
+
+<h3 id="">作用</h3>
+
+<ul>
+<li>有利于SEO：(search engine optimization)搜索引擎的爬虫会根据语义化的标签来计算权重，使得页面和用户关键字更加匹配。高权重会使得我们的页面更早的出现在用户的搜索中。</li>
+<li>提高可访问性。页面也可能给盲人等残障人士看。他们的屏幕阅读器对不同标签会发出不同声音，因此传达不同信息的重要性，使他们更好的阅读网页内容。</li>
+<li>提高代码的可读性。语义化的标签便于多人开发维护。    </li>
 </ul>
 <!-- content end -->
 </div>
