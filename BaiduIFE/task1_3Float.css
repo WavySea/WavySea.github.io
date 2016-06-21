@@ -1,0 +1,8 @@
+body{margin: 0; padding: 20px;}
+.container{ padding: 20px; border:1px solid #999;  background-color: #eee; overflow: hidden; min-width: 630px;}
+.team{font-size:0;padding: 20px; border:1px solid #999; width: 200px;  background-color: white; float: left; }
+#team_logo{width: 80px; height: 80px; border:1px solid #999; padding: 20px;}
+.introduction{padding: 20px; border:1px solid #999; background-color: white; margin-left: 260px;margin-right: 140px;}
+.member{ font-size:0; width: 120px; background-color: white; float: right; border:1px solid #999; text-align: center;}
+.img_member{ width: 80px; height: 80px; border:1px solid #999; margin: 20px; display: block;}
+.team_name{font-size:14px;float: right;}
