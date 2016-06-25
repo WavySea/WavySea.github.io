@@ -1,0 +1,37 @@
+
+
+body{margin: 0; padding: 0; background-color: #D6D6D6; }
+.container{ position: relative; }
+.nav{background-color:#262626; width: 100%; height: 60px; }
+.logo{float: left; font-size: 0; }
+.logo img{ height: 60px; width:360px;}
+.menu { margin: 10px 20px; float: right;}
+.menu ul{display:inline-block; color: #1B6DFA; font-size: 12px; font-family: Calibri; list-style-position: inside; }
+.menu li{float: left; margin-right: 10px;}
+
+.right{position: absolute; right: 25px;  margin-top:20px; width: 350px; box-shadow: 2px 2px 2px #848484;  background-color: white; padding: 20px;}
+.right form{font-size: 12px; }
+.right label{ display: inline-block; text-align: right; margin-right: 10px; width: 30%; vertical-align: top;}
+.reminder{color: #9099A4; margin-left: 34%;}
+form>div{margin: 20px 5px; text-align: left;}
+.right h3{margin: 0 5px 10px 5px; border-left: 3px solid #BBBBBB;padding-left: 10px;}
+.submit input{background-color: #234AC2; width: 300px; height: 40px; color: white;font-size: 12px; border-radius: 6px 6px 6px 6px; border:none; margin: 25px;}
+
+
+.left{ margin:20px 450px 20px 25px;}
+.essay{background-color: white; box-shadow: 2px 2px 2px #848484; padding: 25px; margin-bottom: 30px;}
+.essay h2{color:#59555B; }
+.essay ul{list-style: none;}
+.author{color: #545253}
+.picture img{width: 200px; height: 130px;}
+ a{color: #002DDC;}
+.words b{font-weight: 900;}
+.pic_list figure{display: inline-block; width: 70px; height: 70px; padding: 10px; margin: 15px; border: 1px solid #AFA6A6; text-align: center; font-size: 12px;}
+.pic_list img{width: 40px; height: 50px; margin: 8px; }
+
+.essay table{border-color:  #070707; width: 90%; font-size: 14px; border-collapse: collapse;}
+.essay caption{text-align: left;}
+.essay th{background-color: #262626; text-align: left; color: white;}
+.essay tfoot{background-color: #C1C1C1; font-weight: bold;}
+.essay td,th{border-color: #C1C1C1;}
+.footer{width: 100%; height: 70px; background-color: #000000; color: white;text-align: center; line-height: 70px;}
