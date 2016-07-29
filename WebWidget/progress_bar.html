@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>进度条-progress bar</title>
+	<style type="text/css">
+		.prcsswrap{
+			height: 5px;
+			background-color: yellow;
+		}
+		.prcss{
+			background-color: red;
+			height: 5px;
+			/*width: 0%;*/
+		}
+	</style>
+</head>
+<body>
+	<div class="prcsswrap">
+		<div class="prcss" style="width: 0px;"></div>
+	</div>
+</body>
+<script type="text/javascript">
+	var prcsswrap = document.getElementsByClassName("prcsswrap")[0];
+	var prcss = document.getElementsByClassName("prcss")[0];
+	window.onload= process(prcss,5000,50);
+	function process(elem, drtn, intrvl){
+		var width = elem.parentNode.clientWidth;
+		// console.log('width is'+width);
+		var count = Math.floor(drtn/intrvl); //到达终点之前的步数
+		var stepLength = Math.floor(width/count); //每一步走的距离px
+		// console.log('step'+stepLength);
+		var offSet = 0; //已走过的距离
+		var temOffset = 0; //现在所在位置
+		var step = function(){
+			// alert("step start");
+			// console.log('stepLenth is '+offSet);
+			if (offSet < width) {
+				elem.style.width = offSet + 'px';
+				requestAnimationFrame(step);
+			} else if (offSet = width) {
+				elem.style.width = width + 'px';
+			}else{
+				offSet = width;
+				elem.style.width = width + 'px';
+			}
+			offSet = temOffset + stepLength;
+			temOffset = offSet;
+		}
+		var requestId = requestAnimationFrame(step);
+	}
+
+
+</script>
+</html>
