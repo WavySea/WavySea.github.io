@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task2_18</title>
+	<style type="text/css">
+		#display p{display: inline-block; height: 30px;  background-color: red; color: white; font-size: 20px; text-align: center; margin-right:10px; padding:5px;}
+
+	</style>
+</head>
+<body>
+	<div>
+		<input id="aqi-input" type="text">
+		<button id="add-left">add to left</button>
+		<button id="add-right">add to right</button>
+		<button id="delete-left">delete from left</button>
+		<button id="delete-right">delete from right</button>
+	</div>
+	<div id="display"></div>
+
+	<script type="text/javascript">
+		(function(){
+
+			var $ = function(id){
+				return document.getElementById(id);
+			}
+			var tag = function(name){
+				return document.getElementsByTagName(name);
+			}
+
+			//click the button to manipulate the number sequence
+			var handler = function(ele){
+				var insertValue = $("aqi-input").value;
+				if (isNaN(insertValue)) {
+					alert("Please input numbers! ");
+
+				}else{
+					if (ele == $("add-left")) {
+						var p = document.createElement("p");
+						$("display").insertBefore(p, $("display").firstChild);
+						p.innerHTML = insertValue;
+						p.addEventListener('click', function(){
+							$("display").removeChild(this);
+						},false);
+					}
+
+					else if (ele == $("add-right")) {
+						var p = document.createElement("p");
+						$("display").appendChild(p, $("display").lastChild);
+						p.innerHTML = insertValue;
+						p.addEventListener('click', function(){
+							$("display").removeChild(this);
+						},false);
+					}
+
+					else if (ele == $("delete-left")) {
+						$("display").removeChild(tag("p")[0]);
+					}
+
+					else if (ele == $("delete-right")) {
+						$("display").removeChild($("display").lastElementChild);
+					}
+
+				}
+
+			}
+			$("add-left").addEventListener('click', function(){
+				handler(this);
+			},false);
+			
+			$("add-right").addEventListener('click',function(){
+				handler(this);
+			},false);
+
+			$("delete-left").addEventListener('click', function(){
+				handler(this);
+			},false);
+
+			$("delete-right").addEventListener('click', function(){
+				handler(this);
+			}, false);
+
+
+
+		})();
+	</script>
+</body>
+</html>
