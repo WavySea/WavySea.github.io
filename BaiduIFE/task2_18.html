@@ -23,20 +23,21 @@
 
 			var $ = function(id){
 				return document.getElementById(id);
-			}
+			};
 			var tag = function(name){
 				return document.getElementsByTagName(name);
-			}
+			};
 
 			//click the button to manipulate the number sequence
 			var handler = function(ele){
 				var insertValue = $("aqi-input").value;
+				var p;
 				if (isNaN(insertValue)) {
 					alert("Please input numbers! ");
 
 				}else{
 					if (ele == $("add-left")) {
-						var p = document.createElement("p");
+						p = document.createElement("p");
 						$("display").insertBefore(p, $("display").firstChild);
 						p.innerHTML = insertValue;
 						p.addEventListener('click', function(){
@@ -45,7 +46,7 @@
 					}
 
 					else if (ele == $("add-right")) {
-						var p = document.createElement("p");
+						p = document.createElement("p");
 						$("display").appendChild(p, $("display").lastChild);
 						p.innerHTML = insertValue;
 						p.addEventListener('click', function(){
@@ -63,7 +64,7 @@
 
 				}
 
-			}
+			};
 			$("add-left").addEventListener('click', function(){
 				handler(this);
 			},false);
