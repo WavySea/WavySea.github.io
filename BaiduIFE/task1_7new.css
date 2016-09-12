@@ -1,10 +1,10 @@
 @font-face{
 	font-family:"SimHei";
-	src:url("./image/chinese.simhei.ttf");
+	src:url("./image/task1_7/chinese.simhei.ttf");
 }
 @font-face{
 	font-family:"Microsoft YaHei";
-	src:url("./image/chinese.msyh.ttf");
+	src:url("./image/task1_7/chinese.msyh.ttf");
 }
 body{margin: 0; padding: 0; min-width: 1280px; position: relative;}
 .container{font-family: "Microsoft YaHei";}
