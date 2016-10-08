@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0, user-scalable=no" />
+	<title>网易教育产品部</title>
+	<link rel="stylesheet" type="text/css" href="CSSReset.css">
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<div class="main">
+		<div class="m-top" id="top">
+			<div class="top_reminder">
+				<div id="left_reminder">
+					<span>网易云课堂微专业，帮助你掌握专业技能，令你求职或加薪多一份独特优势！</span>
+					<span>
+						<a href="#">立即查看></a>
+					</span>
+				</div>
+				<div id="close">
+					<div></div>
+					<span>不再提醒</span>
+				</div>
+			</div>
+		</div>
+
+<!-- 导航栏 -->
+		<div class="m-nav">
+			<div class="left">
+				<p class="left_title title_EDU">EDU</p>
+				<p class="left_title title_text">网易教育产品部</p>
+				<button type="button" class="focus left_title">+ 关注</button>
+				<button type="button" class="after_focus left_title">
+					<img src="./image/right.png">
+					<div>已关注</div>
+					<div id="cancelFocus">取消</div>
+				</button>
+				<p class="left_title title_fans">粉丝 45</p>
+			</div>
+			<div class="right">
+				<p class="menu right_title"><a href="http://open.163.com/">网易公开课</a></p>
+				<p class="menu right_title"><a href="http://study.163.com/">云课堂</a></p>
+				<p class="menu right_title"><a href="http://www.icourse163.org/">中国大学MOOC</a></p>
+				<p class="search right_title"></p>	
+			</div>
+			<div class="box-login">
+				<form method="GET" id="login_form">
+					<div>登陆网易云课堂</div>
+					<div id="close-login"></div>
+					<input type="text" name="account" id="account" value="账号">
+					<input type="text" name="password" id="password" value="密码">
+					<input type="button" id="js-open-login"></input>>
+				</form>
+			</div>	
+		</div>
+
+<!-- 三张轮播图 -->
+		<div class="m-banner">
+			<div id="imgwrap">
+				<div class="slider_pic" id="pic3"></div>
+				<div class="slider_pic" id="pic2"></div>
+				<div class="slider_pic" id="pic1"></div>
+			</div>
+		</div>
+		
+		<div class="m-products">
+			<div id="public_course" class="three_courses">
+				<div class="course_icon"></div>
+				<div class="course_title">网易公开课</div>
+				<div class="course_body">推出国内外名校公开课，涉及广泛的学科，名校老师认真讲解深度剖析，网易视频公开课频道搭建起强有力的网络视频教学平台。</div>
+				<div class="course_more"><a href="http://open.163.com/">了解更多></a></div>
+			</div>
+			<div id="cloud_course" class="three_courses">
+				<div class="course_icon"></div>
+				<div class="course_title">云课堂</div>
+				<div class="course_body">网易旗下大型在线学习平台，该平台面向学习者提供海量免费、优质课程,创新的个性化学习体验，自由开放的交流互动环境。</div>
+				<div class="course_more"><a href="http://study.163.com/">了解更多></a></div>
+			</div>
+			<div id="MOOC" class="three_courses">
+				<div class="course_icon"></div>
+				<div class="course_title">中国大学MOOC</div>
+				<div class="course_body">是爱课程网携手云课堂打造的在线学习平台，每一个有提升愿望的人,都可以在这里学习中国最好的大学课程，学完还能获得认证证书。</div>
+				<div class="course_more"><a href="http://www.icourse163.org/">了解更多></a></div>
+			</div>
+		</div>
+
+		<div class="m-environment">
+			<div class="work" id="work01"></div>
+			<div class="work" id="work02"></div>
+			<div class="work" id="work03"></div>
+			<div class="work" id="work04"></div>
+			<div class="work" id="work05"></div>
+		</div>
+	
+	<!-- tab -->
+		<div class="m-MainContent">
+			<div class="side_bar">
+				<div class="m-video">
+					<div class="sidebar-title">机构介绍</div>
+					<div class="sidebar-subtitle">
+						<div>观看下面的视频来了解吧：</div>
+						<div><img src="./image/videopic.png" id="js-open-video"></div>
+						<div class="box-video">
+							<div id="close-video"></div>
+							<div style="font-size:18px;">请观看下面的视频：</div>
+							<video src="http://mov.bn.netease.com/open-movie/nos/mp4/2014/12/30/SADQ86F5S_shd.mp4" width="895px" height="568px"  controls="false"   ></video>
+						</div>
+						<div class="overlay"></div>
+					</div>
+				</div>
+				<div class="m-hot_courses">
+					<div class="sidebar-title">最热排行</div>
+					<div id="HotCourse"></div>
+				</div>
+			</div>
+			<div class="courses">
+				<!-- <div class="side_bar">
+					<div class="video">
+						<div class="video-title">机构介绍</div>
+						<div class="video-open">
+							<div>观看下面的视频来了解吧：</div>
+						</div>
+
+					</div>
+				</div> -->
+				<div class="tab">
+					<div id="left_tab">产品设计</div>
+					<div id="right_tab">编程语言</div>
+				</div>
+				<div class="course_list"></div>
+				<div class="page">
+					<!-- <div><img src="./image/page_button_left.png"></div>
+					<div id="page_mark"><img src="./image/page_button_right.png"></div> -->
+				</div>
+			</div>
+			
+		</div>
+
+
+<!-- footer  -->
+		<div class="footer">
+			<div class="footer_left">
+				<div id="footer_left_top">
+					<p class="left_title title_EDU">EDU</p>
+					<p class="left_title title_text">网易教育产品部</p>
+				</div>
+				<div id="footer_left_bottom">
+					<div>©2014 icourse163.org 浙ICP备08114786号-1</div>
+					<div>icourses.cn 京ICP备12020869号-2 京公网安备110102000459-2</div>
+				</div>
+			</div>
+			<div class="footer_right">
+				<div class="footer_columns" id="footer_right_one">
+					<p>友情链接：</p>
+					<p><a href="http://open.163.com/">网易公开课</a></p>
+					<p><a href="http://study.163.com/">网易云课堂</a></p>
+					<p><a href="http://www.icourse163.org/">中国大学MOOC</a></p>
+				</div>
+				<div class="footer_columns" id="footer_right_two">
+					<p>我们：</p>
+					<p>关于</p>
+					<p>联系</p>
+					<p id="with_picture">关注</p>
+					<img src="./image/weibo.png">
+				</div>
+				<div class="footer_columns" id="footer_right_three">
+					<p>更多：</p>
+					<p>常见问题</p>
+					<p>意见反馈</p>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	<script type="text/javascript" src="./cookie.js"></script>
+	<script type="text/javascript" src="./slider.js"></script>
+	<script type="text/javascript" src="./ajax.js"></script>
+	<script type="text/javascript" src="./md5.js"></script>
+	<script type="text/javascript">
+		(function(){
+
+			var $ = function(id){
+				return document.getElementById(id);
+			};
+			var className = function(name){
+				return document.getElementsByClassName(name);
+			};
+
+						
+
+/***************************顶部cookie部分***********************************/
+			window.onload = function(){
+				checkRemindCookie();
+				checkFocus();
+				// console.log("num"+num_per_page);
+				Ajax(urlCourse,{pageNo:1,psize:num_per_page, type:20},getCourse);
+				pageGenerate();
+				Ajax(urlHotCourse,{},HotCourse); //pageNo:1,psize:10, type:20
+			};
+
+			/*点击关闭顶部提醒*/
+			$("close").addEventListener('click', function(){
+				$("top").parentNode.removeChild($("top"));
+				setCookie('NoMoreRemind', 'yes', 30);
+				console.log('closed');
+				console.log(document.cookie);
+			}, false);
+/***************************关注按钮***********************************/
+			var urlLogin = "http://study.163.com/webDev/login.htm";
+			var urlFocus = "http://study.163.com/webDev/attention.htm";
+			function checkRemindCookie(){
+				if (getCookie("NoMoreRemind") === "yes") {
+					$("top").parentNode.removeChild($("top"));
+				}
+			}
+
+			function checkFocus(){
+				if (getCookie("loginSuc") === "yes") {
+					if (getCookie("focus")==="yes") {
+						className("focus")[0].style.display = "none";
+						className("after_focus")[0].style.display = "inline-block";
+						var button = className("after_focus")[0];
+						button.disabled = true;
+					}
+				}
+				
+			}
+
+			//点击关注后检查是否登陆
+			className("focus")[0].addEventListener('click',loginSuc,false);
+
+			function loginSuc(){
+				console.log("loginSuc");
+				if (getCookie("loginSuc") === "yes") {
+					FocusSuc();
+				}else{
+					console.log("login once");
+					Login();
+
+				}
+			}
+			var account;
+			var password;
+			function Login(){
+				className("overlay")[0].style.display = "block";
+				className("box-login")[0].style.display = "block";
+				$("js-open-login").addEventListener('click',function () {
+					// account =  $("account").value;
+					// password = $("password").value;
+					account =  md5($("account").value);
+					password = md5($("password").value);
+
+				    console.log("acc " + account+" password "+ password);
+					Ajax(urlLogin,{userName:account,password:password},followSuc);			
+				},false);	
+			}
+			
+							
+
+			function followSuc(data){
+				console.log(data);
+				if (data&&data === 1) {
+					setCookie('loginSuc','yes',30);
+					// Ajax(urlFocus,{},FocusSuc);
+				}else{
+					alert("login failed");
+					Login();
+				}
+				
+			}
+
+			function FocusSuc(data){
+				if (data === 1) {
+					setCookie('focus','yes',30);
+					className("overlay")[0].style.display = "none";
+					className("box-login")[0].style.display = "none";
+					className("focus")[0].style.display = "none";
+					className("after_focus")[0].style.display = "inline-block";
+
+				}else{
+					alert("Focus failed");
+					Login();
+				}
+				
+			}
+
+			$("close-login").addEventListener('click',function(){
+				className("overlay")[0].style.display = "none";
+				className("box-login")[0].style.display = "none";
+			},false);
+
+			$("cancelFocus").addEventListener('click',function(){
+				setCookie('focus','no',30);
+				className("focus")[0].style.display = "inline-block";
+				className("after_focus")[0].style.display = "none";
+			},false);
+
+			
+/***************************轮播图部分***********************************/
+
+			//设置轮播间隔
+			var intervalId = setInterval(turnImgs, 5000);
+			//鼠标悬停，图片停止轮播
+			$("imgwrap").addEventListener('mouseout', function(){
+				if (intervalId === null) {
+					intervalId = setInterval(turnImgs, 5000);
+				}
+
+			},false);
+			$("imgwrap").addEventListener('mouseover', function(){
+				window.clearInterval(intervalId); 
+				intervalId = null;
+
+			},false);
+
+			//点击轮播图片跳转至相应网页
+			$("pic1").addEventListener('click', function(){
+				window.open("http://open.163.com/");
+			},false);
+			$("pic2").addEventListener('click', function(){
+				window.open("http://study.163.com/");
+			},false);
+			$("pic3").addEventListener('click', function(){
+				window.open("http://www.icourse163.org/");
+			},false);
+			
+/***************************tab页码部分***********************************/			
+	
+			var startPage;//页码器起始页数
+			var totalPage;//页码器总页数
+			var urlCourse = "http://study.163.com/webDev/couresByCategory.htm";
+			var urlHotCourse = "http://study.163.com/webDev/hotcouresByCategory.htm";
+			var urlIntroduction = "http://mov.bn.netease.com/open-movie/nos/mp4/2014/12/30/SADQ86F5S_shd.mp4";
+			var divs;//存放页码的div
+			var div = [];
+			var num_per_page = 15; //每页呈现的课程数
+			if (document.body.clientWidth > 1205) {
+				num_per_page = 20;
+			}
+			window.addEventListener("resize", function(){tho(ShowNum);},true);
+			function ShowNum(){
+				if (document.body.clientWidth > 1205) {
+					num_per_page = 20;
+					console.log("big than 1205 called, width " + document.body.clientWidth);
+				}else if (document.body.clientWidth == 1205) {
+					num_per_page = 15;
+					console.log("lt 1205 called width " + document.body.clientWidth);
+				}
+				console.log("num_per_page" + num_per_page);
+				Ajax(urlCourse,{pageNo:pageDisplay, psize:num_per_page, type:type}, getCourse);
+
+			}
+
+			function tho(fun){
+				setTimeout(fun,1000);
+			}
+			
+			
+			var type;
+
+			//tab切换
+			$("right_tab").addEventListener('click', function(){
+				this.style.background = "#439326";
+				this.style.color = "white";
+				$("left_tab").style.background = "white";
+				$("left_tab").style.color = "#535353";
+				Ajax(urlCourse,{pageNo:1,psize:num_per_page, type:10},getCourse);
+				pageGenerate();
+				// getHotlist();
+			},false);
+
+			$("left_tab").addEventListener('click', function(){
+				this.style.background = "#439326";
+				this.style.color = "white";
+				$("right_tab").style.background = "white";
+				$("right_tab").style.color = "#535353";
+				Ajax(urlCourse,{pageNo:1,psize:num_per_page, type:20},getCourse);
+				pageGenerate();
+				// getHotlist();
+			},false);
+
+			//页码显示
+			var pageDisplay;//当前显示的页码
+			var pageGenerate = function(){
+				
+				// divGenerate(Para);
+				function divGenerate(ParaDisplay){  //生成存放页码的div
+					pageDisplay = ParaDisplay;
+					if (typeof pageDisplay === "number") {
+						if (pageDisplay < 9) {
+							startPage = 1;
+						}else{
+							startPage = pageDisplay - 4;
+						}
+							
+						if (className("page")[0].innerHTML !== '') {
+							className("page")[0].innerHTML = '';
+						}
+						var left_button = document.createElement("div");
+						className("page")[0].appendChild(left_button);
+						left_button.innerHTML = "<img src=\"./image/page_button_left.png\">";
+						var right_button = document.createElement("div");
+						className("page")[0].appendChild(right_button);
+						right_button.id = "page_mark";
+						right_button.innerHTML = "<img src=\"./image/page_button_right.png\">";
+							
+						
+						if (startPage+8 >= totalPage) {
+							finalPage = totalPage;
+						} else{
+							finalPage = startPage + 8;
+						}
+						console.log(totalPage);
+							
+						for (var p = startPage; p < finalPage; p++) {
+							div[p] = document.createElement("div");
+							div[p].innerHTML = p;
+							div[p].className = "pageNumber";
+							$("page_mark").parentNode.insertBefore(div[p],$("page_mark"));
+						}
+						console.log("start"+startPage);
+
+						divs = className("page")[0].getElementsByTagName("div");
+					 	if (pageDisplay<9) {
+							divs[pageDisplay].id = "pageSelected";
+						}else{
+							divs[5].id = "pageSelected";
+						}
+					} 
+					 console.log("divs:"+divs[pageDisplay]);
+					 console.log("display"+ pageDisplay);
+					 divs[0].addEventListener('click',leftClick,false);
+					$("page_mark").addEventListener('click',rightClick,false);
+
+				}
+
+				divGenerate(1);
+				// divs = className("page")[0].getElementsByTagName("div");
+
+				className("page")[0].addEventListener('click',function(e){
+					if (e.target.className === "pageNumber") {
+						pageDisplay = parseInt(e.target.innerHTML);
+						divGenerate(pageDisplay);
+						Ajax(urlCourse,{pageNo:pageDisplay, psize:num_per_page, type:type}, getCourse);
+					}
+					console.log("target "+ e.target.className); 
+					console.log("curPage "+pageDisplay); 
+					// console.log("target"+ e.target); 
+					// divs[0].addEventListener('click',leftClick,false);
+					// divs[9].addEventListener('click',rightClick,false);
+				},false);
+				
+				
+				console.log("page"+pageDisplay);
+
+				function leftClick(){
+					if (pageDisplay === 1) {
+						Ajax(urlCourse,{pageNo:1, psize:num_per_page, type:type}, getCourse); 
+						console.log("left click pagedisplay " + pageDisplay);
+						// pageGenerate(1);
+					}else{
+						pageDisplay = pageDisplay - 1;
+						Ajax(urlCourse,{pageNo:pageDisplay, psize:num_per_page, type:type}, getCourse); 
+						divGenerate(pageDisplay);
+						console.log("left click pagedisplay " + pageDisplay);
+					}
+				}
+
+				function rightClick(){
+					console.log('right clicked');
+					pageDisplay = pageDisplay + 1;
+					console.log("right pageDisplay " + pageDisplay);
+					Ajax(urlCourse,{pageNo:pageDisplay, psize:num_per_page, type:type}, getCourse); 
+					console.log("displayfinal " + pageDisplay);
+					divGenerate(pageDisplay);
+				}
+
+			};
+			
+
+/***************************tab课程显示部分***********************************/
+			function getCourse(data,options){
+				console.log("getcourse " + data + " type: " + options.type + " pageno: " + options.pageNo);
+				totalPage = data.totalPage;
+				type = options.type;
+				// pageGenerate(data,options);
+				// console.log("num_per_page getCourse "+num_per_page);
+				if (num_per_page === 15) {
+					coursePerLine = 3;
+				}else{
+					coursePerLine = 4;
+				}
+				console.log("coursePerLine"+coursePerLine);
+
+				className("course_list")[0].innerHTML = "";
+				var courseList;
+				var pic;
+				var courseName;
+				var courseProvider;
+				var learnerCount;
+				var learnerImg;
+				var learnerNum;
+				var DivId;
+				function CourseNodeGenerator(cl){
+					//课程图片
+					pic = document.createElement("img");
+					pic.id = cl;
+					pic.className = "getCoursePic";
+					pic.src = data.list[cl].bigPhotoUrl;
+					pic.style.width = "195px";
+					pic.style.height = "115px";
+					//课程名称
+					courseName = document.createElement("div");
+					// courseName.style.height = "21px";
+					// courseName.style.width = "183px";
+					courseName.innerHTML = data.list[cl].name;
+					courseName.className = "courseFont";
+					//provider
+					courseProvider = document.createElement("div");
+					courseProvider.className = "courseFont";
+					courseProvider.innerHTML = data.list[cl].provider;
+					courseProvider.style.color = "#A7A7A7";
+					//learnerCount在学人数
+					learnerCount = document.createElement("div");
+					learnerCount.className = "learners";
+					learnerImg = document.createElement("img");
+					learnerImg.src = "./image/courseListener.png";
+					learnerImg.style.height = "12px";
+					learnerImg.style.float="left";
+					learnerNum = document.createElement("div");
+					learnerNum.innerHTML = data.list[cl].learnerCount;
+					learnerNum.className = "learnerNum";
+				}
+				// var cl;
+				for (var cl = 0; cl < data.list.length; cl++) {
+					courseList = document.createElement("div");
+					courseList.style.width = "195px";
+					courseList.style.height = "190px";
+					courseList.className = "courseNode";
+					courseList.style.background = "white";
+					CourseNodeGenerator(cl);
+
+					//price价格
+					var price = document.createElement("div");
+					price.innerHTML = "￥" + data.list[cl].price;
+					price.className = "price";
+
+
+					className("course_list")[0].appendChild(courseList);
+					courseList.appendChild(pic);
+					className("courseNode")[cl].appendChild(courseName);
+					className("courseNode")[cl].appendChild(courseProvider);
+					className("courseNode")[cl].appendChild(learnerCount);
+					learnerCount.appendChild(learnerImg);
+					learnerCount.appendChild(learnerNum);
+					courseList.appendChild(price);
+					CourseDetail(cl);
+
+					// className("courseNode")[cl].addEventListener('click', MouseOver, false);
+
+				}
+
+				className("course_list")[0].addEventListener('mouseover',function(e) {
+										
+					// console.log("CourseLargeNode" + CourseLargeNode);
+					 if (e.target.className === "getCoursePic") {
+					 	DivId = e.target.id;
+					 	// console.log(className("courseNode")[DivId]);
+					 	className("CourseLargeNode")[DivId].style.display = "inline-block";
+					 	// className("courseNode")[DivId].style.display = "none";
+					 	
+					 }
+				},false);
+
+
+
+				className("course_list")[0].addEventListener('mouseout',function(e) {
+					
+					
+					// console.log("CourseLargeNode" + CourseLargeNode);
+					 if (e.target.className === "getCoursePic") {
+					 	DivId = e.target.id;
+					 	className("CourseLargeNode")[DivId].style.display = "none";
+
+
+					 	// className("courseNode")[DivId].style.display = "inline-block";
+					}
+				},false);
+
+				// function MouseOver(){
+				// 	console.log("mouseover" + cl);
+				// 		className("CourseLargeNode")[cl].style.display = "inline-block";
+				// 		// className("courseNode")[cl].style.display = "none";
+						
+				// }
+
+				function CourseDetail(cl){
+					var CourseLargeNode = document.createElement("div");
+					CourseLargeNode.className = "CourseLargeNode";
+
+					className("course_list")[0].appendChild(CourseLargeNode);
+					//上半部wrapper
+					var LargeTopWrap = document.createElement("div");
+					LargeTopWrap.style.height = "150px";
+					LargeTopWrap.style.width = "420px";
+					//下半部wrapper
+					var LargeBottomWrap = document.createElement("div");
+					// LargeBottomWrap.height = "70px";
+					// LargeBottomWrap.width = "420px";
+					LargeBottomWrap.style.cssText = 'height:150px;width:400px;background-color:#F4F4F4;vertical-align:middle;font-size:14px;color:#575757; padding:10px;';
+					LargeBottomWrap.innerHTML = data.list[cl].description;
+					//课程图片
+					var CourseLargeImg = document.createElement("img");
+					CourseLargeImg.src = data.list[cl].bigPhotoUrl;
+					// CourseLargeImg.cssText = 'height:115px;width:195px;display:inline-block;margin:18px; float:left;';
+					CourseLargeImg.style.height = "115px";
+					CourseLargeImg.style.width = "195px";
+					CourseLargeImg.style.display = "inline-block";
+					CourseLargeImg.style.margin = "18px";
+					CourseLargeImg.style.float = "left";
+					//课程名称
+					var CourseLargeName = document.createElement("div");
+					CourseLargeName.style.cssText = 'font-size:16px; height:20px;width:160px; display:inline-block; margin:18px 0 18px 0;';
+					//在学人数
+					var CourseLargeLearner = document.createElement("div");
+					CourseLargeLearner.style.cssText = 'font-size:0; vertical-align:middle;height:12px; margin:10px 0;';
+					var learnerImg = document.createElement("img");
+					learnerImg.src = "./image/courseListener.png";
+					learnerImg.style.height = "12px";
+					learnerImg.style.float="left";
+					
+					var CourseLargeLearnerNum = document.createElement("div");
+					CourseLargeLearnerNum.innerHTML = data.list[cl].learnerCount + "人在学";
+					CourseLargeLearnerNum.style.cssText = 'font-size:12px; color:#575757;height:12px; line-height:12px; margin-left:2px; ';
+					//发布者
+					var CourseLargeProvider = document.createElement("div");
+					CourseLargeProvider.innerHTML = "发布者：" + data.list[cl].provider;
+					CourseLargeProvider.style.cssText = 'font-size:12px; color:#575757;height:12px; line-height:12px; margin-left:2px;margin-bottom:5px;';
+					//分类
+					var CourseLargeCategory = document.createElement("div");
+					var categoryName;
+					if (data.list[cl].categoryName === null) {
+						categoryName = "无";
+					}else{
+						categoryName = data.list[cl].categoryName;
+					}
+					CourseLargeCategory.innerHTML = "分类：" + categoryName;
+					CourseLargeCategory.style.cssText = 'font-size:12px; color:#575757;height:12px; line-height:12px; margin-left:2px; ';
+
+					//课程描述
+					// var CourseLargeDescription = document.createElement("div");
+					// CourseLargeDescription.innerHTML = data.list[cl].description;
+					// CourseLargeDescription.style.cssText = 'height:170px;font-size:14px;color:#575757; padding-top:18px;vertical-align:middle; overflow:hidden; ';
+
+					// CourseLargeName.style.height = "20px";
+					// CourseLargeName.style.width = "130px";
+					// CourseLargeName.style.font = "18px";
+
+					CourseLargeName.innerHTML = data.list[cl].name;
+
+					CourseLargeNode.appendChild(LargeTopWrap);
+					CourseLargeNode.appendChild(LargeBottomWrap);
+					LargeTopWrap.appendChild(CourseLargeImg);
+					LargeTopWrap.appendChild(CourseLargeName);
+					LargeTopWrap.appendChild(CourseLargeLearner);
+					CourseLargeLearner.appendChild(learnerImg);
+					CourseLargeLearner.appendChild(CourseLargeLearnerNum);
+					LargeTopWrap.appendChild(CourseLargeProvider);
+					LargeTopWrap.appendChild(CourseLargeCategory);
+					// LargeBottomWrap.appendChild(CourseLargeDescription);
+
+
+				}
+				console.log(className("course_list")[0]);
+				console.log(className("courses")[0]);
+
+			}
+			
+
+/***************************课程侧边栏***********************************/
+			function HotCourse(data,options){
+				$("HotCourse").innerHTML = "";
+				console.log(data.length);
+				var HotStartNum = 0;
+				var h;
+				ShowHotCourse();
+				var HotInterval = setInterval(ShowHotCourse, 5000);
+				function ShowHotCourse(){					
+					if (HotStartNum > 20) {
+						HotStartNum = 0;
+					}
+					$("HotCourse").innerHTML = "";
+					for (h = HotStartNum; h < HotStartNum + 10; h++) {
+						
+					//展示每门课程
+						var eachHotCourse = document.createElement("div");
+						eachHotCourse.className = "eachHotCourse";
+						//热门课程图片
+						var HotCoursePhoto = document.createElement("img");
+						if (h>19) {
+							HotCoursePhoto.src = data[h-20].smallPhotoUrl;
+						}else{
+							HotCoursePhoto.src = data[h].smallPhotoUrl;
+						}
+						
+						HotCoursePhoto.className = "HotCoursePhoto";
+						//热门课程内容
+						var HotCourseContent = document.createElement("div");
+						HotCourseContent.className = "HotCourseContent";
+					
+						//热门课程名称
+						var HotCourseName = document.createElement("div");
+						if (h>19) {
+							HotCourseName.innerHTML = data[h-20].name;
+						}else{
+							HotCourseName.innerHTML = data[h].name;
+						}
+						
+						HotCourseName.className = "HotCourseName";
+						//参与人数
+						var HotCourseLearner = document.createElement("div");
+						HotCourseLearner.className = "HotCourseLearner";
+						var learnerImg = document.createElement("img");
+						learnerImg.style.height = "15px";
+						learnerImg.style.width = "15px";
+						learnerImg.style.display = "inline-block";
+						learnerImg.src = "./image/courseListener.png";
+						learnerImg.className = "learnerImg";
+						// learnerImg.float = "left";
+
+						var learnerNum = document.createElement("div");
+						// learnerNum.style.width = "80px";
+						// learnerNum.style.height = "13px";
+						// learnerNum.style.display = "inline-block";
+						learnerNum.className = "learnerNumHot";
+						if (h>19) {
+							learnerNum.innerHTML = data[h-20].learnerCount;
+						}else{
+							learnerNum.innerHTML = data[h].learnerCount;
+						}
+						
+
+
+
+
+						$("HotCourse").appendChild(eachHotCourse);					
+						eachHotCourse.appendChild(HotCoursePhoto);
+						eachHotCourse.appendChild(HotCourseContent);
+						HotCourseContent.appendChild(HotCourseName);
+						HotCourseContent.appendChild(HotCourseLearner);
+						HotCourseLearner.appendChild(learnerImg);
+						HotCourseLearner.appendChild(learnerNum);
+						console.log("side"+className("sidebar-subtitle")[0]);
+
+					}
+					HotStartNum = HotStartNum + 1;
+					console.log("HotStartNum" + HotStartNum);
+				}
+				
+
+				
+
+			}	
+
+/***************************机构介绍视频***********************************/
+			$("js-open-video").addEventListener('click', function() {
+				className("overlay")[0].style.display = "block";
+				className("box-video")[0].style.display="block";
+				console.log("clicked video");
+			},false);
+			className("overlay")[0].addEventListener('click',function(){
+				className("overlay")[0].style.display="none";
+				className("box-video")[0].style.display="none";
+			},false);	
+			$("close-video").addEventListener('click',function(){
+				className("overlay")[0].style.display="none";
+				className("box-video")[0].style.display="none";
+			},false);
+			
+
+
+		})();
+
+	</script>
+</body>
+</html>
