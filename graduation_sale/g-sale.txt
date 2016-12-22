@@ -1,0 +1,73 @@
+var mydata = {
+	"electronic":[
+		{
+			"id":"1",
+			"name":"Entry level budget custom gaming desktop(desktop only)", 
+			"pic_url":[{"pic01":"./image/E21.JPG"},{"pic02":"./image/E22.jpg"},{"pic03":"./image/E23.jpg"}],
+			"description":"The links below are original links for the parts I bought 2 years ago<br> <a href=\"https://www.amazon.com/gp/product/B00KPRWAZQ/ref=oh_aui_detailpage_o02_s00?ie=UTF8&psc=1\">Intel Pentium G3258(dual core overlocked to 4.5GHz) </a>  ", 
+			"price":"$300",
+			"mail":"mailto:yanyan1993324@yahoo.com?subject=我对Entry level budget custom gaming desktop感兴趣！"},
+		{
+			"id":"2",
+			"name":"24 inch 1080p 1200p IPS HP LCD LP2475 monitor", 
+			"pic_url":[{"pic01":"./image/E21.JPG"},{"pic02":"./image/E22.jpg"},{"pic03":"./image/E23.jpg"}],
+			"description":"non-smoking home<br>Display Type LCD monitor / TFT active matrix<br>Diagonal Size 24\"<br>Viewable Size 24\"<br>Built-in Devices USB hub<br>Panel Type IPS<br>Aspect RatioWidescreen - 16:10<br>Native Resolution 1920 x 1200 at 60 Hz<br>Pixel Pitch 0.27 mm<br>Brightness 400 cd/m²<br>Contrast Ratio 1000:1<br>Response Time 12 ms (On/Off); 6 ms (gray-to-gray)<br>Vertical Refresh Rate 85 Hz<br>Horizontal Refresh Rate 94 kHz<br>Video Bandwidth 205 MHz<br>Horizontal Viewing Angle 178<br>Vertical Viewing Angle 178<br>Screen Coating Anti-glare, anti-static<br>Color Temperature 9300K, 6500K<br>Controls & Adjustments Brightness, contrast, H/V position, color temperature, clock<br>OSD Languages Chinese (simplified), Brazilian Portuguese, English, German, French, Italian, Spanish, Dutch, Japanese<br>Features Picture in picture, HDCP, 102% color gamut, picture outside picture<br>ColorCarbonite<br>Dimensions (WxDxH)21.9 in x 10 in x 16.6 in<br>Weight 20.06 lbs<br>可以完美连接mac ", 
+			"price":"$80",
+			"mail":"mailto:yanyan1993324@yahoo.com?subject=我对24 inch 1080p 1200p IPS HP LCD LP2475 monitor感兴趣！"
+		},
+		{
+			"id":"3",
+			"name":"PS4 500GB console w/2 Dualshock 4 controllers", 
+			"pic_url":"",
+			"description":"Adult owned, non-smoking home.<br>Barely used Sony Play Station 4 500GB , system is updated to latest, and I just did a factory reset for your personal settings.<br>Purchased brand new by me in May of 2015. I mostly used it for streaming Blu-Ray movies. It has never given me any problems and works flawlessly. I'm selling it because I don't have time to play it.<br>No dents or scratches, very good shape.<br>Power cable, HDMI cable and USB charging cable are included.<br>$275 or best offer.<br>Cash only. Pick up only.", 
+			"price":"$275",
+			"mail":"mailto:yanyan1993324@yahoo.com?subject=我对PS4 500GB console w/2 Dualshock 4 controllers感兴趣！"
+		},
+		{
+			"id":"4",
+			"name":"Bose Companion 2 Series II", 
+			"pic_url":"",
+			"description":"<a href:\"https://www.amazon.com/Bose-Companion-Multimedia-Speaker-System/dp/B000HZDF8W\">The link of this product</a><br>Very good 2.0 speaker, made by Bose.<br>Excellent sound quality.<br>Non-smoking home.", 
+			"price":"$80",
+			"mail":"mailto:yanyan1993324@yahoo.com?subject=我对Bose Companion 2 Series II感兴趣！"
+		},
+		{
+			"id":"5",
+			"name":"Steel Series Siberia V2 Headset Frost Blue", 
+			"pic_url":"",
+			"description":"<a href:\"https://www.amazon.com/gp/product/B008LT5MFA/ref=oh_aui_detailpage_o01_s00?ie=UTF8&psc=1\">The link of this product</a><br>lightly used.non-smoking home. Very beautiful lights at night, lights are configurable.", 
+			"price":"$50",
+			"mail":"mailto:yanyan1993324@yahoo.com?subject=我对Steel Series Siberia V2 Headset Frost Blue感兴趣！"
+		},
+		{
+			"id":"6",
+			"name":"Dead LG G4", 
+			"pic_url":"",
+			"description":".", 
+			"price":"$100",
+			"mail":"mailto:yanyan1993324@yahoo.com?subject=我对Dead LG G4感兴趣！"
+		}
+	],
+
+	
+
+	"domestic_elec" : [
+		{
+			"id":"1",
+			"name":"小电扇", 
+			"pic_url":[{"pic01":"./image/E21.JPG"},{"pic02":"./image/E22.jpg"},{"pic03":"./image/E23.jpg"}],
+			"description":"这个小电扇优点是扇叶比较大，国内家庭常见款式，分低中高三挡，可以摆头。", 
+			"price":"$10",
+			"mail":"mailto:yanyan1993324@yahoo.com?subject=我对小电扇感兴趣！"
+		},
+		{
+			"id":"1",
+			"name":"小电扇", 
+			"pic_url":[{"pic01":"./image/E21.JPG"},{"pic02":"./image/E22.jpg"},{"pic03":"./image/E23.jpg"}],
+			"description":"这个小电扇优点是扇叶比较大，国内家庭常见款式，分低中高三挡，可以摆头。", 
+			"price":"$10",
+			"mail":"mailto:yanyan1993324@yahoo.com?subject=我对小电扇感兴趣！"
+		}
+	]
+
+}
