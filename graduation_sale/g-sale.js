@@ -21,7 +21,7 @@
 			intro.style.display = "none";
 			console.log("run");	
 			// setCategoryClick("electronic");
-			getCategory(setThingsListClick);
+			getCategory();
 		},false);
 	}
 
@@ -33,7 +33,24 @@
 		return mydata[name];
 	};
 
-	function getCategory(callback){
+	var eventEmitter = {//一个event只能有一个callback函数
+		callbacks:{},
+
+		on:function(event, fn) {
+	    	eventEmitter.callbacks[event] = fn;
+		},
+		emit:function(event, parameter) {
+	    	var para = parameter || 0;
+	    	if (para) {
+	    		eventEmitter.callbacks[event](para);
+	    	} else{
+	    		eventEmitter.callbacks[event]();      
+	    	}
+
+	  	}
+	};
+	
+	function getCategory(){
 		var category;
 		$('sidebar')[0].addEventListener('click',function(e){
 			console.log("getCategory: "+e.target.className.split(" ",1));
@@ -50,7 +67,7 @@
 			}
 			// console.log("执行判断sale_list中是否为空或重复的代码 第二个判断值为: ", id('sale_list').childNodes[1].className.match(category)!==null);
 			// var mydata = JSON.parse(mydata);
-			if (id('sale_list').childNodes.length!==1) {
+			if (id('sale_list').childNodes.length !==1) {
 				// var jsonSentence = "mydata."+category+".length";
 				id('sale_list').innerHTML = "";
 			}
@@ -62,33 +79,50 @@
 				new_product.id = dataCategory[i].id;
 				new_product.className = category+" items";
 				id('sale_list').appendChild(new_product);
+				console.log("have run new_product :"+new_product.id);
+				var p_description = document.createElement('div');
+				p_description.innerHTML = "<br><img src=\""+dataCategory[i].pic_url[0].pic01 +"\">"+"<br><img src=\""+dataCategory[i].pic_url[1].pic02 +"\">"+"<br><img src=\""+dataCategory[i].pic_url[2].pic03 +"\">"+"<br>" + "产品描述：<div class=\"description\">" + dataCategory[i].description +"</div>"+ "<br><br>";
+				p_description.style.display = 'none';
+				new_product.appendChild(p_description);			
 			}
-			callback(category);		
+			console.log("set category");
 		},false);
-
+		setThingsListClick();
+		// console.log("category 值为： "+ category);
 		
 	}
 
-
-	function setThingsListClick(category){
-		id("sale_list").addEventListener('click',function(event){
-			console.log(event.target.childNodes);
-			if (event.target.childNodes.length !== 1) {
-					event.target.removeChild(event.target.childNodes[1]);
+	
+	function setThingsListClick(){
+		console.log('test');
+		id("sale_list").addEventListener('click',function(event){			
+			var description = event.target.childNodes[1];
+			console.log("description childNodes[1] "+description.innerHTML);
+			if (description.style.display === "none") {
+				description.style.display = "block";
+				console.log("let it show" + description.style.display);
 			}else{
-				var dataCategory = formatData(category);
-				console.log("取到的category"+category);
-				for (var i = 0; i < dataCategory.length; i++) {
-					if (event.target.id===dataCategory[i].id) {
+				description.style.display = "none";
+				console.log("let it hide");
+			}
+			
+			// if (event.target.childNodes.length !== 1) {
+			// 	console.log("have run true or false" + "now, the childNodes are:" + event.target.childNodes);
+			// 		event.target.removeChild(event.target.childNodes[1]);
+			// }else{
+				
+			// 	console.log("取到的category"+category);
+			// 	for (var i = 0; i < dataCategory.length; i++) {
+			// 		if (event.target.id===dataCategory[i].id) {
 						
 						// console.log(dataCategory[i].pic_url[2].pic03);
-						var p_description = document.createElement('div');
-						p_description.innerHTML = "<br><img src=\""+dataCategory[i].pic_url[0].pic01 +"\">"+"<br><img src=\""+dataCategory[i].pic_url[1].pic02 +"\">"+"<br><img src=\""+dataCategory[i].pic_url[2].pic03 +"\">"+"<br>" + "产品描述：<div class=\"description\">" + dataCategory[i].description +"</div>"+ "<br><br>";
-						event.target.appendChild(p_description);
+						// var p_description = document.createElement('div');
+						// p_description.innerHTML = "<br><img src=\""+dataCategory[i].pic_url[0].pic01 +"\">"+"<br><img src=\""+dataCategory[i].pic_url[1].pic02 +"\">"+"<br><img src=\""+dataCategory[i].pic_url[2].pic03 +"\">"+"<br>" + "产品描述：<div class=\"description\">" + dataCategory[i].description +"</div>"+ "<br><br>";
+						// event.target.appendChild(p_description);
 
-					}
-				}
-			}
+			// 		}
+			// 	}
+			// }
 		},false);
 	}
 	
