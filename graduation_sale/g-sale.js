@@ -33,22 +33,6 @@
 		return mydata[name];
 	};
 
-	var eventEmitter = {//一个event只能有一个callback函数
-		callbacks:{},
-
-		on:function(event, fn) {
-	    	eventEmitter.callbacks[event] = fn;
-		},
-		emit:function(event, parameter) {
-	    	var para = parameter || 0;
-	    	if (para) {
-	    		eventEmitter.callbacks[event](para);
-	    	} else{
-	    		eventEmitter.callbacks[event]();      
-	    	}
-
-	  	}
-	};
 	
 	function getCategory(){
 		var category;
@@ -106,23 +90,6 @@
 				console.log("let it hide");
 			}
 			
-			// if (event.target.childNodes.length !== 1) {
-			// 	console.log("have run true or false" + "now, the childNodes are:" + event.target.childNodes);
-			// 		event.target.removeChild(event.target.childNodes[1]);
-			// }else{
-				
-			// 	console.log("取到的category"+category);
-			// 	for (var i = 0; i < dataCategory.length; i++) {
-			// 		if (event.target.id===dataCategory[i].id) {
-						
-						// console.log(dataCategory[i].pic_url[2].pic03);
-						// var p_description = document.createElement('div');
-						// p_description.innerHTML = "<br><img src=\""+dataCategory[i].pic_url[0].pic01 +"\">"+"<br><img src=\""+dataCategory[i].pic_url[1].pic02 +"\">"+"<br><img src=\""+dataCategory[i].pic_url[2].pic03 +"\">"+"<br>" + "产品描述：<div class=\"description\">" + dataCategory[i].description +"</div>"+ "<br><br>";
-						// event.target.appendChild(p_description);
-
-			// 		}
-			// 	}
-			// }
 		},false);
 	}
 	
