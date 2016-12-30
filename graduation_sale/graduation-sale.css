@@ -46,7 +46,7 @@ body {
   background-color: #dbd0a7;
   width: 20%;
   height: 2600px;
-  text-align: right;
+  text-align: center;
   padding: 40px 0;
   display: inline-block; }
   @media screen and (max-width: 640px) {
