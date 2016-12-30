@@ -42,6 +42,7 @@ body {
   color: black; }
 
 .sidebar {
+  float: left;
   background-color: #dbd0a7;
   width: 20%;
   height: 2600px;
@@ -51,6 +52,9 @@ body {
   @media screen and (max-width: 640px) {
     .sidebar {
       width: 12%; } }
+  @media screen and (max-width: 450px) {
+    .sidebar {
+      width: 15%; } }
 
 .sidebar_content {
   display: block;
@@ -69,11 +73,13 @@ body {
       padding-top: 4px; } }
 
 .things {
-  float: right;
   width: 70%;
   height: 2600px;
   display: inline-block;
   padding: 0 40px; }
+  @media screen and (max-width: 450px) {
+    .things {
+      width: 50%; } }
 
 #sale_list {
   color: #123555; }
