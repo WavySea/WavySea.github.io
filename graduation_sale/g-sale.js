@@ -92,10 +92,21 @@
 			
 		},false);
 	}
+
+	
+	
+
+	
 	
 	window.onload = function(){
 		//tab切换
 		introduction();
+		// if (document.body.clientWidth < 640) {
+		// 	SmallMenu();
+		// }else{
+		// 	window.onresize=SmallMenu;
+		// }
+		
 	
 	};
 
