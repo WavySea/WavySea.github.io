@@ -21,8 +21,7 @@ body {
   color: #123555; }
 
 .sale {
-  width: 100%;
-  height: 2600px; }
+  width: 100%; }
 
 .category:hover {
   background-color: #e69b03;
@@ -45,7 +44,7 @@ body {
   float: left;
   background-color: #dbd0a7;
   width: 20%;
-  height: 2600px;
+  height: 100%;
   text-align: center;
   padding: 40px 0;
   display: inline-block; }
@@ -75,9 +74,9 @@ body {
 
 .things {
   width: 65%;
-  height: 2600px;
   display: inline-block;
-  padding: 0 40px; }
+  padding: 0 40px;
+  margin-bottom: 55px; }
   @media screen and (max-width: 450px) {
     .things {
       width: 50%; } }
@@ -99,8 +98,8 @@ body {
     color: #123555; }
 
 .items img {
-  height: 50%;
-  width: 50%; }
+  height: 70%;
+  width: 70%; }
 
 .description {
   margin-left: 50px;
