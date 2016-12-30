@@ -82,9 +82,14 @@ body {
       width: 50%; } }
 
 #sale_list {
-  color: #123555; }
+  color: #123555;
+  width: 100%; }
   #sale_list li {
     margin: 11px 0; }
+    @media screen and (max-width: 640px) {
+      #sale_list li {
+        font-size: 12px;
+        margin: 8px 0; } }
 
 .items:hover {
   cursor: pointer;
@@ -97,7 +102,13 @@ body {
   width: 50%; }
 
 .description {
-  margin-left: 50px; }
+  margin-left: 50px;
+  width: 75%; }
+  @media screen and (max-width: 640px) {
+    .description {
+      margin-left: 10px;
+      width: 100%;
+      font-size: 9px; } }
 
 footer {
   background-color: #123555;
