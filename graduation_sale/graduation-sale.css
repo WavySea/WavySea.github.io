@@ -54,7 +54,8 @@ body {
       width: 12%; } }
   @media screen and (max-width: 450px) {
     .sidebar {
-      width: 15%; } }
+      width: 15%;
+      font-size: 8px; } }
 
 .sidebar_content {
   display: block;
