@@ -46,8 +46,9 @@ body {
   width: 20%;
   height: 100%;
   text-align: center;
-  padding: 40px 0;
-  display: inline-block; }
+  padding: 60px 0;
+  display: inline-block;
+  margin-bottom: 60px; }
   @media screen and (max-width: 640px) {
     .sidebar {
       width: 12%; } }
