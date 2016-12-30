@@ -92,7 +92,7 @@ $pink:rgb(209,73,78);
 		display:block;
 		width: 70px;
 		height:80px;
-		font-size:11px;
+		font-size:8px;
 		padding-right:6px;
 		padding-top:4px;
 		
@@ -107,7 +107,7 @@ $pink:rgb(209,73,78);
 
 .things{
 	// float:right;
-	width:70%;
+	width:65%;
 	height:2600px;
 	display:inline-block;
 	padding:0 40px;
@@ -120,6 +120,9 @@ $pink:rgb(209,73,78);
 
 #sale_list{
 	color:$blue;
+	li{
+		margin: 11px 0;
+	}
 }
 .items:hover{
 	cursor:pointer;
