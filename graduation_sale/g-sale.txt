@@ -3,7 +3,7 @@ var mydata = {
 		{
 			"id":"1",
 			"name":"Entry level budget custom gaming desktop(desktop only)", 
-			"pic_url":[{"pic":"./image/E21.jpg"},{"pic":"./image/E22.jpg"},{"pic":"./image/E23.jpg"}],
+			"pic_url":[{"pic":"./image/E11.jpg"},{"pic":"./image/E12.jpg"},{"pic":"./image/E13.jpg"}],
 			"description":"The links below are original links for the parts I bought 2 years ago<br> <a href=\"https://www.amazon.com/gp/product/B00KPRWAZQ/ref=oh_aui_detailpage_o02_s00?ie=UTF8&psc=1\">Intel Pentium G3258(dual core overlocked to 4.5GHz) </a>  ", 
 			"price":"$300",
 			"mail":"mailto:yanyan1993324@yahoo.com?subject=我对Entry level budget custom gaming desktop感兴趣！"},
@@ -18,7 +18,7 @@ var mydata = {
 		{
 			"id":"3",
 			"name":"PS4 500GB console w/2 Dualshock 4 controllers", 
-			"pic_url":[{"pic":"./image/E21.jpg"},{"pic":"./image/E22.jpg"},{"pic":"./image/E23.jpg"}],
+			"pic_url":[{"pic":"./image/E31.jpg"},{"pic":"./image/E32.jpg"},{"pic":"./image/E33.jpg"}],
 			"description":"Adult owned, non-smoking home.<br>Barely used Sony Play Station 4 500GB , system is updated to latest, and I just did a factory reset for your personal settings.<br>Purchased brand new by me in May of 2015. I mostly used it for streaming Blu-Ray movies. It has never given me any problems and works flawlessly. I'm selling it because I don't have time to play it.<br>No dents or scratches, very good shape.<br>Power cable, HDMI cable and USB charging cable are included.<br>$275 or best offer.<br>Cash only. Pick up only.", 
 			"price":"$275",
 			"mail":"mailto:yanyan1993324@yahoo.com?subject=我对PS4 500GB console w/2 Dualshock 4 controllers感兴趣！"
@@ -26,27 +26,22 @@ var mydata = {
 		{
 			"id":"4",
 			"name":"Bose Companion 2 Series II", 
-			"pic_url":[{"pic":"./image/E21.jpg"},{"pic":"./image/E22.jpg"},{"pic":"./image/E23.jpg"}],
+			"pic_url":[{"pic":"./image/E41.jpg"},{"pic":"./image/E42.jpg"},{"pic":"./image/E43.jpg"}],
 			"description":"<a href:\"https://www.amazon.com/Bose-Companion-Multimedia-Speaker-System/dp/B000HZDF8W\">The link of this product</a><br>Very good 2.0 speaker, made by Bose.<br>Excellent sound quality.<br>Non-smoking home.", 
 			"price":"$80",
 			"mail":"mailto:yanyan1993324@yahoo.com?subject=我对Bose Companion 2 Series II感兴趣！"
 		},
+
 		{
 			"id":"5",
-			"name":"Steel Series Siberia V2 Headset Frost Blue", 
-			"pic_url":[{"pic":"./image/E21.jpg"},{"pic":"./image/E22.jpg"},{"pic":"./image/E23.jpg"}],
-			"description":"<a href:\"https://www.amazon.com/gp/product/B008LT5MFA/ref=oh_aui_detailpage_o01_s00?ie=UTF8&psc=1\">The link of this product</a><br>lightly used.non-smoking home. Very beautiful lights at night, lights are configurable.", 
-			"price":"$50",
-			"mail":"mailto:yanyan1993324@yahoo.com?subject=我对Steel Series Siberia V2 Headset Frost Blue感兴趣！"
-		},
-		{
-			"id":"6",
-			"name":"Dead LG G4", 
-			"pic_url":[{"pic":"./image/E21.jpg"},{"pic":"./image/E22.jpg"},{"pic":"./image/E23.jpg"}],
-			"description":".", 
+			"name":"Panasonic Viera 42" - HD Plasma Television -- GREAT CONDITION", 
+			"pic_url":[{"pic":"./image/E51.jpg"},{"pic":"./image/E52.jpg"},{"pic":"./image/E53.jpg"}],
+			"description":"3 HDMI ports,赠送电视信号接收器，可以免费收到纽约附近的十个左右电视台信号", 
 			"price":"$100",
-			"mail":"mailto:yanyan1993324@yahoo.com?subject=我对Dead LG G4感兴趣！"
-		}
+			
+		},
+		
+		
 	],
 
 	
@@ -175,6 +170,28 @@ var mydata = {
 			"pic_url":[{"pic":"./image/G21.jpg"},{"pic":"./image/G22.jpg"},{"pic":"./image/G23.jpg"}],
 			"description":"两种收纳，打包甩卖。。", 
 			"price":"$5",
+		},
+		{
+			"id":"3",
+			"name":"衣服收纳", 
+			"pic_url":[{"pic":"./image/G31.jpg"},{"pic":"./image/G32.jpg"},{"pic":"./image/G33.jpg"}],
+			"description":"可以用来放置要洗的衣服或者洗干净的内衣，都可以收起或者折叠。", 
+			"price":"$5 for two",
+		},
+
+		{
+			"id":"4",
+			"name":"健身器材", 
+			"pic_url":[{"pic":"./image/G41.jpg"},{"pic":"./image/G42.jpg"},{"pic":"./image/G43.jpg"}],
+			"description":"当时买的两套，所以有八个7.5lbs和八个2.5lbs的。中间的钢管四根，可以任意组合。问题就是，有一根钢管弯了。。。。", 
+			"price":"$5 for all",
+		},
+		{
+			"id":"5",
+			"name":"气垫床", 
+			"pic_url":[{"pic":"./image/G51.jpg"},{"pic":"./image/G52.jpg"},{"pic":"./image/G53.jpg"}],
+			"description":"16年感恩节在amazon买的，很新没怎么用过，充气是自动的，一分钟之内能充好。放气后也不怎么占地方。", 
+			"price":"$15",
 		},
 
 	]
