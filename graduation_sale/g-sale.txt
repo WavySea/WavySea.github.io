@@ -3,14 +3,14 @@ var mydata = {
 		{
 			"id":"1",
 			"name":"Entry level budget custom gaming desktop(desktop only)", 
-			"pic_url":[{"pic01":"./image/E11.jpg"},{"pic02":"./image/E22.jpg"},{"pic03":"./image/E23.jpg"}],
+			"pic_url":[{"pic":"./image/E21.jpg"},{"pic":"./image/E22.jpg"},{"pic":"./image/E23.jpg"}],
 			"description":"The links below are original links for the parts I bought 2 years ago<br> <a href=\"https://www.amazon.com/gp/product/B00KPRWAZQ/ref=oh_aui_detailpage_o02_s00?ie=UTF8&psc=1\">Intel Pentium G3258(dual core overlocked to 4.5GHz) </a>  ", 
 			"price":"$300",
 			"mail":"mailto:yanyan1993324@yahoo.com?subject=我对Entry level budget custom gaming desktop感兴趣！"},
 		{
 			"id":"2",
 			"name":"24 inch 1080p 1200p IPS HP LCD LP2475 monitor", 
-			"pic_url":[{"pic01":"./image/E21.JPG"},{"pic02":"./image/E22.jpg"},{"pic03":"./image/E23.jpg"}],
+			"pic_url":[{"pic":"./image/E21.jpg"},{"pic":"./image/E22.jpg"},{"pic":"./image/E23.jpg"}],
 			"description":"non-smoking home<br>Display Type LCD monitor / TFT active matrix<br>Diagonal Size 24\"<br>Viewable Size 24\"<br>Built-in Devices USB hub<br>Panel Type IPS<br>Aspect RatioWidescreen - 16:10<br>Native Resolution 1920 x 1200 at 60 Hz<br>Pixel Pitch 0.27 mm<br>Brightness 400 cd/m²<br>Contrast Ratio 1000:1<br>Response Time 12 ms (On/Off); 6 ms (gray-to-gray)<br>Vertical Refresh Rate 85 Hz<br>Horizontal Refresh Rate 94 kHz<br>Video Bandwidth 205 MHz<br>Horizontal Viewing Angle 178<br>Vertical Viewing Angle 178<br>Screen Coating Anti-glare, anti-static<br>Color Temperature 9300K, 6500K<br>Controls & Adjustments Brightness, contrast, H/V position, color temperature, clock<br>OSD Languages Chinese (simplified), Brazilian Portuguese, English, German, French, Italian, Spanish, Dutch, Japanese<br>Features Picture in picture, HDCP, 102% color gamut, picture outside picture<br>ColorCarbonite<br>Dimensions (WxDxH)21.9 in x 10 in x 16.6 in<br>Weight 20.06 lbs<br>可以完美连接mac ", 
 			"price":"$80",
 			"mail":"mailto:yanyan1993324@yahoo.com?subject=我对24 inch 1080p 1200p IPS HP LCD LP2475 monitor感兴趣！"
@@ -18,7 +18,7 @@ var mydata = {
 		{
 			"id":"3",
 			"name":"PS4 500GB console w/2 Dualshock 4 controllers", 
-			"pic_url":[{"pic01":"./image/E21.JPG"},{"pic02":"./image/E22.jpg"},{"pic03":"./image/E23.jpg"}],
+			"pic_url":[{"pic":"./image/E21.jpg"},{"pic":"./image/E22.jpg"},{"pic":"./image/E23.jpg"}],
 			"description":"Adult owned, non-smoking home.<br>Barely used Sony Play Station 4 500GB , system is updated to latest, and I just did a factory reset for your personal settings.<br>Purchased brand new by me in May of 2015. I mostly used it for streaming Blu-Ray movies. It has never given me any problems and works flawlessly. I'm selling it because I don't have time to play it.<br>No dents or scratches, very good shape.<br>Power cable, HDMI cable and USB charging cable are included.<br>$275 or best offer.<br>Cash only. Pick up only.", 
 			"price":"$275",
 			"mail":"mailto:yanyan1993324@yahoo.com?subject=我对PS4 500GB console w/2 Dualshock 4 controllers感兴趣！"
@@ -26,7 +26,7 @@ var mydata = {
 		{
 			"id":"4",
 			"name":"Bose Companion 2 Series II", 
-			"pic_url":[{"pic01":"./image/E21.JPG"},{"pic02":"./image/E22.jpg"},{"pic03":"./image/E23.jpg"}],
+			"pic_url":[{"pic":"./image/E21.jpg"},{"pic":"./image/E22.jpg"},{"pic":"./image/E23.jpg"}],
 			"description":"<a href:\"https://www.amazon.com/Bose-Companion-Multimedia-Speaker-System/dp/B000HZDF8W\">The link of this product</a><br>Very good 2.0 speaker, made by Bose.<br>Excellent sound quality.<br>Non-smoking home.", 
 			"price":"$80",
 			"mail":"mailto:yanyan1993324@yahoo.com?subject=我对Bose Companion 2 Series II感兴趣！"
@@ -34,7 +34,7 @@ var mydata = {
 		{
 			"id":"5",
 			"name":"Steel Series Siberia V2 Headset Frost Blue", 
-			"pic_url":[{"pic01":"./image/E21.JPG"},{"pic02":"./image/E22.jpg"},{"pic03":"./image/E23.jpg"}],
+			"pic_url":[{"pic":"./image/E21.jpg"},{"pic":"./image/E22.jpg"},{"pic":"./image/E23.jpg"}],
 			"description":"<a href:\"https://www.amazon.com/gp/product/B008LT5MFA/ref=oh_aui_detailpage_o01_s00?ie=UTF8&psc=1\">The link of this product</a><br>lightly used.non-smoking home. Very beautiful lights at night, lights are configurable.", 
 			"price":"$50",
 			"mail":"mailto:yanyan1993324@yahoo.com?subject=我对Steel Series Siberia V2 Headset Frost Blue感兴趣！"
@@ -42,7 +42,7 @@ var mydata = {
 		{
 			"id":"6",
 			"name":"Dead LG G4", 
-			"pic_url":[{"pic01":"./image/E21.JPG"},{"pic02":"./image/E22.jpg"},{"pic03":"./image/E23.jpg"}],
+			"pic_url":[{"pic":"./image/E21.jpg"},{"pic":"./image/E22.jpg"},{"pic":"./image/E23.jpg"}],
 			"description":".", 
 			"price":"$100",
 			"mail":"mailto:yanyan1993324@yahoo.com?subject=我对Dead LG G4感兴趣！"
@@ -55,7 +55,7 @@ var mydata = {
 		{
 			"id":"1",
 			"name":"小电扇", 
-			"pic_url":[{"pic01":"./image/D11.jpg"},{"pic02":"./image/D12.jpg"},{"pic03":"./image/D13.jpg"}],
+			"pic_url":[{"pic":"./image/D11.jpg"},{"pic":"./image/D12.jpg"},{"pic":"./image/D13.jpg"}],
 			"description":"这个小电扇优点是扇叶比较大，国内家庭常见款式，分低中高三挡，可以摆头。电扇内部的扇叶部分和外面的罩子我们都已经清洗干净。", 
 			"price":"$10",
 			"mail":"mailto:yanyan1993324@yahoo.com?subject=我对小电扇感兴趣！"
@@ -63,7 +63,7 @@ var mydata = {
 		{
 			"id":"2",
 			"name":"二叉树灯", 
-			"pic_url":[{"pic01":"./image/D21.jpg"},{"pic02":"./image/D22.jpg"},{"pic03":"./image/D23.jpg"}],
+			"pic_url":[{"pic":"./image/D21.jpg"},{"pic":"./image/D22.jpg"},{"pic":"./image/D23.jpg"}],
 			"description":"沃尔玛最平价的灯，好使，耐用，侧灯是万向的。图三是我家的三叉树灯，平时用来学习。灯头可以旋转。一起要的话算5刀。", 
 			"price":"$3 each",
 			"mail":"mailto:yanyan1993324@yahoo.com?subject=我对二叉树灯感兴趣！"
@@ -71,7 +71,7 @@ var mydata = {
 		{
 			"id":"3",
 			"name":"吹风机", 
-			"pic_url":[{"pic01":"./image/D31.jpg"},{"pic02":"./image/D32.jpg"},{"pic03":"./image/D33.jpg"}],
+			"pic_url":[{"pic":"./image/D31.jpg"},{"pic":"./image/D32.jpg"},{"pic":"./image/D33.jpg"}],
 			"description":"我是长头发，而且头发比较厚，这款吹风机用high的温度，大风，大约8分钟左右就能干。如果不想用高温度，可以调节到warm档。我的吹风机不带图示中的黑色扁头。", 
 			"price":"$10",
 			"mail":"mailto:yanyan1993324@yahoo.com?subject=我对吹风机感兴趣！"
@@ -80,7 +80,7 @@ var mydata = {
 		{
 			"id":"4",
 			"name":"吸尘器", 
-			"pic_url":[{"pic01":"./image/D41.jpg"},{"pic02":"./image/D42.jpg"},{"pic03":"./image/D43.jpg"}],
+			"pic_url":[{"pic":"./image/D41.jpg"},{"pic":"./image/D42.jpg"},{"pic":"./image/D43.jpg"}],
 			"description":"这款吸尘器是当时为了吸家里地毯买的，特意挑的性价比很高的一款。这款吸尘器原价在130刀左右，是除了dyson之外清洁能力很强的一款吸尘器。平常使用的时候，吸尘效果确实不错，后盖可以打开倒出吸上来的灰尘。总共有四种吸头，分别可以用来清扫不同场景下的垃圾和灰尘。用原始的大头吸尘的时候，前面会有个照明灯亮起，哪里有灰尘都可以看得很明显。", 
 			"price":"$45",
 			
@@ -88,7 +88,7 @@ var mydata = {
 		{
 			"id":"5",
 			"name":"体重秤", 
-			"pic_url":[{"pic01":"./image/D51.jpg"},{"pic02":"./image/D52.jpg"},{"pic03":"./image/D53.jpg"}],
+			"pic_url":[{"pic":"./image/D51.jpg"},{"pic":"./image/D52.jpg"},{"pic":"./image/D53.jpg"}],
 			"description":"一年前在Costco买的,数字显示清晰，准确性也可以。", 
 			"price":"$5",
 			
@@ -96,7 +96,7 @@ var mydata = {
 		{
 			"id":"6",
 			"name":"窗式空调", 
-			"pic_url":[{"pic01":"./image/D61.jpg"},{"pic02":"./image/D62.jpg"},{"pic03":"./image/D63.jpg"}],
+			"pic_url":[{"pic":"./image/D61.jpg"},{"pic":"./image/D62.jpg"},{"pic":"./image/D63.jpg"}],
 			"description":"16年的五月份刚从沃尔玛买回来的新空调，手动开关，5K BTU, 带insulation kit。studio大小的屋子制冷效果没问题。", 
 			"price":"$55",
 			
@@ -111,7 +111,7 @@ var mydata = {
 
 			"id":"1",
 			"name":"电视柜", 
-			"pic_url":[{"pic01":"./image/F11.jpg"},{"pic02":"./image/F12.jpg"},{"pic03":"./image/F13.jpg"}],
+			"pic_url":[{"pic":"./image/F11.jpg"},{"pic":"./image/F12.jpg"},{"pic":"./image/F13.jpg"}],
 			"description":"这个IKEA的电视柜是两层的，第二层可以一些配套的电子产品。长90厘米，宽25厘米，高45厘米。上层承重30kg，二层承重10kg。<br> <a href=\"http://www.ikea.com/us/en/catalog/products/90243297/\">IKEA link</a>", 
 			"price":"$8",
 		},
@@ -119,7 +119,7 @@ var mydata = {
 
 			"id":"2",
 			"name":"小方桌", 
-			"pic_url":[{"pic01":"./image/F21.jpg"},{"pic02":"./image/F22.jpg"},{"pic03":"./image/F23.jpg"}],
+			"pic_url":[{"pic":"./image/F21.jpg"},{"pic":"./image/F22.jpg"},{"pic":"./image/F23.jpg"}],
 			"description":"IKEA最便宜的小方桌，我有两个，一个当做床头柜用，一个放在客厅放零食用。桌子的占地不大，随便摆在哪里都会很方便。买两个可以便宜算。<br> <a href=\"http://www.ikea.com/us/en/catalog/products/20011408/\">IKEA link</a>", 
 			"price":"$3",
 		},
@@ -127,7 +127,7 @@ var mydata = {
 
 			"id":"3",
 			"name":"可拆卸衣架", 
-			"pic_url":[{"pic01":"./image/F31.jpg"},{"pic02":"./image/F32.jpg"},{"pic03":"./image/F33.jpg"}],
+			"pic_url":[{"pic":"./image/F31.jpg"},{"pic":"./image/F32.jpg"},{"pic":"./image/F33.jpg"}],
 			"description":"沃尔玛买的组装衣架，很轻，下面有滚轮，方便移动。分上下两层，上层可以挂衣服，下层可以用来挂浴巾之类的。两边长出来的部分可以挂丝巾或者小包。两个可以15刀成交。<br> <a href=\"https://www.walmart.com/ip/Homdox-Adjustable-Extendable-Single-Garment-Hangers-With-Castors-and-Shoe-Rack/138506352\">walmart link</a>", 
 			"price":"$10",
 		},
@@ -135,7 +135,7 @@ var mydata = {
 
 			"id":"4",
 			"name":"书桌", 
-			"pic_url":[{"pic01":"./image/F41.jpg"},{"pic02":"./image/F42.jpg"},{"pic03":"./image/F43.jpg"}],
+			"pic_url":[{"pic":"./image/F41.jpg"},{"pic":"./image/F42.jpg"},{"pic":"./image/F43.jpg"}],
 			"description":"IKEA书桌基本款。", 
 			"price":"$10",
 		},
@@ -143,7 +143,7 @@ var mydata = {
 
 			"id":"5",
 			"name":"办公椅", 
-			"pic_url":[{"pic01":"./image/F51.jpg"},{"pic02":"./image/F41.jpg"},{"pic03":"./image/F43.jpg"}],
+			"pic_url":[{"pic":"./image/F51.jpg"},{"pic":"./image/F41.jpg"},{"pic":"./image/F43.jpg"}],
 			"description":"IKEA转椅。<br> <a href=\"http://www.ikea.com/us/en/catalog/products/50283884/\">IKEA link</a>", 
 			"price":"$10",
 		},
@@ -151,7 +151,7 @@ var mydata = {
 
 			"id":"6",
 			"name":"茶几", 
-			"pic_url":[{"pic01":"./image/F61.jpg"},{"pic02":"./image/F62.jpg"},{"pic03":"./image/F63.jpg"}],
+			"pic_url":[{"pic":"./image/F61.jpg"},{"pic":"./image/F62.jpg"},{"pic":"./image/F63.jpg"}],
 			"description":"IKEA Coffee table。<br> <a href=\"http://www.ikea.com/us/en/catalog/products/40104294/#/10104295\">IKEA link</a>", 
 			"price":"$10",
 		},
@@ -164,7 +164,7 @@ var mydata = {
 		{
 			"id":"1",
 			"name":"桌游", 
-			"pic_url":[{"pic01":"./image/G11.jpg"},{"pic02":"./image/G12.jpg"},{"pic03":"./image/G13.jpg"}],
+			"pic_url":[{"pic":"./image/G11.jpg"},{"pic":"./image/G12.jpg"},{"pic":"./image/G13.jpg"}],
 			"description":"包括大富翁，CLUE多人推理游戏，UNO，Game Of Throne.所有加起来打包甩卖。分开价格可议。打包购买优先。", 
 			"price":"$10",
 		},
@@ -172,7 +172,7 @@ var mydata = {
 		{
 			"id":"2",
 			"name":"桌面收纳", 
-			"pic_url":[{"pic01":"./image/G21.jpg"},{"pic02":"./image/G22.jpg"},{"pic03":"./image/G23.jpg"}],
+			"pic_url":[{"pic":"./image/G21.jpg"},{"pic":"./image/G22.jpg"},{"pic":"./image/G23.jpg"}],
 			"description":"两种收纳，打包甩卖。。", 
 			"price":"$5",
 		},
