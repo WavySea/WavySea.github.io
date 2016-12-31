@@ -4,7 +4,7 @@ var mydata = {
 			"id":"1",
 			"name":"Entry level budget custom gaming desktop(desktop only)", 
 			"pic_url":[{"pic":"./image/E11.jpg"},{"pic":"./image/E12.jpg"},{"pic":"./image/E13.jpg"}],
-			"description":"The links below are original links for the parts I bought 2 years ago<br> <a href=\"https://www.amazon.com/gp/product/B00KPRWAZQ/ref=oh_aui_detailpage_o02_s00?ie=UTF8&psc=1\">Intel Pentium G3258(dual core overlocked to 4.5GHz) </a>  ", 
+			"description":"The links below are original links for the parts I bought 2 years ago<br> <a href=\"https://www.amazon.com/gp/product/B00KPRWAZQ/ref=oh_aui_detailpage_o02_s00?ie=UTF8&psc=1\">Intel Pentium G3258(dual core overlocked to 4.5GHz) </a> <br><a href=\"  http://www.newegg.com/Product/Product.aspx?Item=N82E16820148694\">240GB Crucial M500 SSD </a><br><a href=\"https://www.amazon.com/Crucial-Ballistix-PC3-12800-240-Pin-BLS8G3D1609DS1S00/dp/B006YG9E7O/ref=sr_1_1?s=pc&ie=UTF8&qid=1476722831&sr=1-1&keywords=8GB+crucial\">8GB DDR3 1600 Crucial</a><br><a href=\" https://www.amazon.com/gp/product/B009AEL3JO/ref=oh_aui_detailpage_o04_s00?ie=UTF8&psc=1\">ZOTAC GTX660(2GB DDR5)</a><br><a href=\"https://www.amazon.com/gp/product/B0092ML1SC/ref=oh_aui_detailpage_o02_s01?ie=UTF8&psc=1\">Corsair CX430 430 watt Power Supply</a><br><a href=\"https://www.amazon.com/gp/product/B00D12OAOG/ref=oh_aui_detailpage_o02_s01?ie=UTF8&psc=1\">B85M P33 Motherboard </a> <br><a href=\"https://www.amazon.com/gp/product/B00BSKY1M4/ref=oh_aui_detailpage_o02_s01?ie=UTF8&psc=1\">Cooler Master Hyper T4 CPU Cooler</a> <br>Licensed Windows 10 + Licensed Office 2010 installed (including word/excel/ppt bla bla bla )<br>NO CD-ROM (It's 2016 you can always install everything through internet)", 
 			"price":"$300",
 			"mail":"mailto:yanyan1993324@yahoo.com?subject=我对Entry level budget custom gaming desktop感兴趣！"},
 		{
@@ -113,18 +113,18 @@ var mydata = {
 		{
 
 			"id":"2",
-			"name":"小方桌", 
+			"name":"小方桌x2", 
 			"pic_url":[{"pic":"./image/F21.jpg"},{"pic":"./image/F22.jpg"},{"pic":"./image/F23.jpg"}],
 			"description":"IKEA最便宜的小方桌，我有两个，一个当做床头柜用，一个放在客厅放零食用。桌子的占地不大，随便摆在哪里都会很方便。买两个可以便宜算。<br> <a href=\"http://www.ikea.com/us/en/catalog/products/20011408/\">IKEA link</a>", 
-			"price":"$3",
+			"price":"$3 for each",
 		},
 		{
 
 			"id":"3",
-			"name":"可拆卸衣架", 
+			"name":"可拆卸衣架x2", 
 			"pic_url":[{"pic":"./image/F31.jpg"},{"pic":"./image/F32.jpg"},{"pic":"./image/F33.jpg"}],
 			"description":"沃尔玛买的组装衣架，很轻，下面有滚轮，方便移动。分上下两层，上层可以挂衣服，下层可以用来挂浴巾之类的。两边长出来的部分可以挂丝巾或者小包。两个可以15刀成交。<br> <a href=\"https://www.walmart.com/ip/Homdox-Adjustable-Extendable-Single-Garment-Hangers-With-Castors-and-Shoe-Rack/138506352\">walmart link</a>", 
-			"price":"$10",
+			"price":"$10 for each",
 		},
 		{
 
