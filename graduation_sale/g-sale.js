@@ -9,7 +9,7 @@
 	function introduction(){
 		var intro = document.createElement('div');
 		intro.style.cssText="margin-top:50px; color:rgb(18,53,85)";
-		intro.innerHTML="欢迎浏览我的毕业物品，网站使用规则如下：<p>请点击左侧导航栏选择相应产品类别；</p><p>在清单中你将会看到产品列表；</p> <p>点击喜欢的产品名字将会看到这个产品更详细的产品信息或图片展示,再次点击产品名称，详细信息自动收起；</p><p>如果你对某个产品感兴趣，欢迎邮件和我联系，也欢迎和我砍价或交流想法哦~</p>";
+		intro.innerHTML="欢迎浏览我的毕业转卖物品，网站使用规则如下：<p>请点击左侧导航栏选择相应产品类别；</p><p>在清单中你将会看到产品列表；</p> <p>点击喜欢的产品名字将会看到这个产品更详细的产品信息或图片展示,再次点击产品名称，详细信息自动收起；</p><p>如果你对某个产品感兴趣，欢迎邮件和我联系，也欢迎和我砍价或交流想法哦~</p>";
 		intro.id="intro";
 		var btn = document.createElement('button');
 		btn.innerHTML = "OK";
