@@ -34,9 +34,9 @@ var mydata = {
 
 		{
 			"id":"5",
-			"name":"Panasonic Viera 42" - HD Plasma Television -- GREAT CONDITION", 
+			"name":"Panasonic Viera 42inch" , 
 			"pic_url":[{"pic":"./image/E51.jpg"},{"pic":"./image/E52.jpg"},{"pic":"./image/E53.jpg"}],
-			"description":"3 HDMI ports,赠送电视信号接收器，可以免费收到纽约附近的十个左右电视台信号", 
+			"description":"- HD Plasma Television <br>-- GREAT CONDITION <br>3 HDMI ports,赠送电视信号接收器，可以免费收到纽约附近的十个左右电视台信号", 
 			"price":"$100",
 			
 		},
