@@ -65,23 +65,30 @@
 					new_product.className = category+" items";
 					id('sale_list').appendChild(new_product);
 					console.log("have run new_product :"+new_product.id);
-					var p_description = document.createElement('div');
-					var pic01 = dataCategory[i].pic_url[0].pic;
-					var pic02 = dataCategory[i].pic_url[1].pic;
-					var pic03 = dataCategory[i].pic_url[2].pic;
-					// p_description.innerHTML = "<br><img src=\""+pic01 +"\" onerror=\"ChangeFileType(\""+pic01+"\")\">"+"<br><img src=\""+pic02 +"\" onerror=\"ChangeFileType("+pic02+")\">"+"<br><img src=\""+pic03 +"\" onerror=\"ChangeFileType("+pic03+")\">"+"<br>" + "产品描述：<div class=\"description\">" + dataCategory[i].description +"</div>"+ "<br><br>";
-					for (var j = 0; j < dataCategory[i].pic_url.length; j++) {
-						var descrip_img = document.createElement('IMG');
-						descrip_img.src = dataCategory[i].pic_url[j].pic;
-						p_description.appendChild(descrip_img);
-						console.log("address  "+dataCategory[i].pic_url[j].pic);
-						// p_description.innerHTML += "<br><img src=\"" + dataCategory[i].pic_url[j].pic + "\">";
+					
+					if (dataCategory[i].status === "sold out") {
+						console.log("status: "+dataCategory[i].status);
+						new_product.style.cssText = "text-decoration:line-through;";
+					}else{
+						var p_description = document.createElement('div');
+						var pic01 = dataCategory[i].pic_url[0].pic;
+						var pic02 = dataCategory[i].pic_url[1].pic;
+						var pic03 = dataCategory[i].pic_url[2].pic;
+						// p_description.innerHTML = "<br><img src=\""+pic01 +"\" onerror=\"ChangeFileType(\""+pic01+"\")\">"+"<br><img src=\""+pic02 +"\" onerror=\"ChangeFileType("+pic02+")\">"+"<br><img src=\""+pic03 +"\" onerror=\"ChangeFileType("+pic03+")\">"+"<br>" + "产品描述：<div class=\"description\">" + dataCategory[i].description +"</div>"+ "<br><br>";
+						for (var j = 0; j < dataCategory[i].pic_url.length; j++) {
+							var descrip_img = document.createElement('IMG');
+							descrip_img.src = dataCategory[i].pic_url[j].pic;
+							p_description.appendChild(descrip_img);
+							console.log("address  "+dataCategory[i].pic_url[j].pic);
+							// p_description.innerHTML += "<br><img src=\"" + dataCategory[i].pic_url[j].pic + "\">";
+						}
+						var descrip_word = document.createElement('div');
+						descrip_word.innerHTML = "产品描述：<div class=\"description\">" + dataCategory[i].description +"</div>"+ "<br><br>";
+						p_description.appendChild(descrip_word);
+						p_description.style.display = 'none';
+						new_product.appendChild(p_description);	
 					}
-					var descrip_word = document.createElement('div');
-					descrip_word.innerHTML = "产品描述：<div class=\"description\">" + dataCategory[i].description +"</div>"+ "<br><br>";
-					p_description.appendChild(descrip_word);
-					p_description.style.display = 'none';
-					new_product.appendChild(p_description);			
+							
 				}
 				console.log("set category");
 			}
@@ -123,6 +130,7 @@
 			
 		},false);
 	}
+
 
 	
 	

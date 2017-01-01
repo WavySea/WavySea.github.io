@@ -6,14 +6,15 @@ var mydata = {
 			"pic_url":[{"pic":"./image/E11.jpg"},{"pic":"./image/E12.jpg"},{"pic":"./image/E13.jpg"}],
 			"description":"The links below are original links for the parts I bought 2 years ago<br> <a href=\"https://www.amazon.com/gp/product/B00KPRWAZQ/ref=oh_aui_detailpage_o02_s00?ie=UTF8&psc=1\">Intel Pentium G3258(dual core overlocked to 4.5GHz) </a> <br><a href=\"  http://www.newegg.com/Product/Product.aspx?Item=N82E16820148694\">240GB Crucial M500 SSD </a><br><a href=\"https://www.amazon.com/Crucial-Ballistix-PC3-12800-240-Pin-BLS8G3D1609DS1S00/dp/B006YG9E7O/ref=sr_1_1?s=pc&ie=UTF8&qid=1476722831&sr=1-1&keywords=8GB+crucial\">8GB DDR3 1600 Crucial</a><br><a href=\" https://www.amazon.com/gp/product/B009AEL3JO/ref=oh_aui_detailpage_o04_s00?ie=UTF8&psc=1\">ZOTAC GTX660(2GB DDR5)</a><br><a href=\"https://www.amazon.com/gp/product/B0092ML1SC/ref=oh_aui_detailpage_o02_s01?ie=UTF8&psc=1\">Corsair CX430 430 watt Power Supply</a><br><a href=\"https://www.amazon.com/gp/product/B00D12OAOG/ref=oh_aui_detailpage_o02_s01?ie=UTF8&psc=1\">B85M P33 Motherboard </a> <br><a href=\"https://www.amazon.com/gp/product/B00BSKY1M4/ref=oh_aui_detailpage_o02_s01?ie=UTF8&psc=1\">Cooler Master Hyper T4 CPU Cooler</a> <br>Licensed Windows 10 + Licensed Office 2010 installed (including word/excel/ppt bla bla bla )<br>NO CD-ROM (It's 2016 you can always install everything through internet)<br>Accessories :<br> power cable & <a href=\"https://www.amazon.com/Edimax-EW-7811Un-150Mbps-Raspberry-Supports/dp/B003MTTJOY/ref=lp_13983791_1_2?s=pc&ie=UTF8&qid=1476724936&sr=1-2\">USB wireless adapter</a><br>+++++++++++++++++++++++++++++++++++++++<br>(ONLY DESKTOP, NO KEYBOARD/MOUSE/MONITOR)<br>+++++++++++++++++++++++++++++++++++++++<br>This computer runs fast like a beast<strong> (takes less than 10 seconds to start, game/files/softwares loads super fast).<strong><br>This is a super good entry level gaming set with very low power consumption(no higher than 300 Watt when gaming, and around 80 Watt when non-gaming) The graphic card GTX 660 is very low consumed.<br>From non-smoking home<br>Good for home/gaming/office/HTPC.<br>Super good for budget students(I used it for Dota2/streaming TV series mostly).<br>Gaming Performance: <br>1080p: Ultra preset  Dota2/WoW/LoL   90+ fps(meanning  it's a blast); Mid-High GTA 5   40~50fps (playable and smooth)<br>1440p:Ultra preset  Dota2      50 fps(playable and smooth)<br>I'm selling it because I'm moving, and don't have time for gaming any more.. <br>", 
 			"price":"$300",
-			"mail":"mailto:yanyan1993324@yahoo.com?subject=我对Entry level budget custom gaming desktop感兴趣！"},
+			"status":"sold out",
+		},
 		{
 			"id":"2",
 			"name":"24 inch 1080p 1200p IPS HP LCD LP2475 monitor", 
 			"pic_url":[{"pic":"./image/E21.jpg"},{"pic":"./image/E22.jpg"},{"pic":"./image/E23.jpg"}],
 			"description":"non-smoking home<br>Display Type LCD monitor / TFT active matrix<br>Diagonal Size 24\"<br>Viewable Size 24\"<br>Built-in Devices USB hub<br>Panel Type IPS<br>Aspect RatioWidescreen - 16:10<br>Native Resolution 1920 x 1200 at 60 Hz<br>Pixel Pitch 0.27 mm<br>Brightness 400 cd/m²<br>Contrast Ratio 1000:1<br>Response Time 12 ms (On/Off); 6 ms (gray-to-gray)<br>Vertical Refresh Rate 85 Hz<br>Horizontal Refresh Rate 94 kHz<br>Video Bandwidth 205 MHz<br>Horizontal Viewing Angle 178<br>Vertical Viewing Angle 178<br>Screen Coating Anti-glare, anti-static<br>Color Temperature 9300K, 6500K<br>Controls & Adjustments Brightness, contrast, H/V position, color temperature, clock<br>OSD Languages Chinese (simplified), Brazilian Portuguese, English, German, French, Italian, Spanish, Dutch, Japanese<br>Features Picture in picture, HDCP, 102% color gamut, picture outside picture<br>ColorCarbonite<br>Dimensions (WxDxH)21.9 in x 10 in x 16.6 in<br>Weight 20.06 lbs<br>可以完美连接mac ", 
 			"price":"$80",
-			"mail":"mailto:yanyan1993324@yahoo.com?subject=我对24 inch 1080p 1200p IPS HP LCD LP2475 monitor感兴趣！"
+			"status":"",
 		},
 		{
 			"id":"3",
@@ -21,7 +22,7 @@ var mydata = {
 			"pic_url":[{"pic":"./image/E31.jpg"},{"pic":"./image/E32.jpg"},{"pic":"./image/E33.jpg"}],
 			"description":"Adult owned, non-smoking home.<br>Barely used Sony Play Station 4 500GB , system is updated to latest, and I just did a factory reset for your personal settings.<br>Purchased brand new by me in May of 2015. I mostly used it for streaming Blu-Ray movies. It has never given me any problems and works flawlessly. I'm selling it because I don't have time to play it.<br>No dents or scratches, very good shape.<br>Power cable, HDMI cable and USB charging cable are included.<br>$275 or best offer.<br>Cash only. Pick up only.", 
 			"price":"$275",
-			"mail":"mailto:yanyan1993324@yahoo.com?subject=我对PS4 500GB console w/2 Dualshock 4 controllers感兴趣！"
+			"status":"sold out",
 		},
 		{
 			"id":"4",
@@ -29,7 +30,7 @@ var mydata = {
 			"pic_url":[{"pic":"./image/E41.jpg"},{"pic":"./image/E42.jpg"},{"pic":"./image/E43.jpg"}],
 			"description":"<a href:\"https://www.amazon.com/Bose-Companion-Multimedia-Speaker-System/dp/B000HZDF8W\">The link of this product</a><br>Very good 2.0 speaker, made by Bose.<br>Excellent sound quality.<br>Non-smoking home.", 
 			"price":"$80",
-			"mail":"mailto:yanyan1993324@yahoo.com?subject=我对Bose Companion 2 Series II感兴趣！"
+			"status":"",
 		},
 
 		{
@@ -38,16 +39,17 @@ var mydata = {
 			"pic_url":[{"pic":"./image/E51.jpg"},{"pic":"./image/E52.jpg"},{"pic":"./image/E53.jpg"}],
 			"description":"- HD Plasma Television <br>-- GREAT CONDITION <br>3 HDMI ports,赠送电视信号接收器，可以免费收到纽约附近的十个左右电视台信号", 
 			"price":"$100",
+			"status":""
 			
 		},
 
 		{
 			"id":"6",
 			"name":"27 inch monitor HP ZR2740W" , 
-			"pic_url":[{"pic":"./image/E51.jpg"},{"pic":"./image/E52.jpg"},{"pic":"./image/E53.jpg"}],
+			"pic_url":[{"pic":"./image/E61.jpg"},{"pic":"./image/E62.jpg"},{"pic":"./image/E63.jpg"}],
 			"description":"resolution 2560 x 1440  IPS panel <br>dp/dvi port (no hdmi)<br>great for games/mac users(retina full support)", 
 			"price":"$150",
-			
+			"status":"sold out"
 		},
 		
 		
@@ -70,7 +72,7 @@ var mydata = {
 			"pic_url":[{"pic":"./image/D21.jpg"},{"pic":"./image/D22.jpg"},{"pic":"./image/D23.jpg"}],
 			"description":"沃尔玛最平价的灯，好使，耐用，侧灯是万向的。图三是我家的三叉树灯，平时用来学习。灯头可以旋转。一起要的话算5刀。", 
 			"price":"$3 each",
-			"mail":"mailto:yanyan1993324@yahoo.com?subject=我对二叉树灯感兴趣！"
+			"status":"sold out"
 		},
 		{
 			"id":"3",
@@ -78,7 +80,7 @@ var mydata = {
 			"pic_url":[{"pic":"./image/D31.jpg"},{"pic":"./image/D32.jpg"},{"pic":"./image/D33.jpg"}],
 			"description":"我是长头发，而且头发比较厚，这款吹风机用high的温度，大风，大约8分钟左右就能干。如果不想用高温度，可以调节到warm档。我的吹风机不带图示中的黑色扁头。", 
 			"price":"$10",
-			"mail":"mailto:yanyan1993324@yahoo.com?subject=我对吹风机感兴趣！"
+			"status":""
 		},
 		
 		{
@@ -87,6 +89,7 @@ var mydata = {
 			"pic_url":[{"pic":"./image/D41.jpg"},{"pic":"./image/D42.jpg"},{"pic":"./image/D43.jpg"}],
 			"description":"这款吸尘器是当时为了吸家里地毯买的，特意挑的性价比很高的一款。这款吸尘器原价在130刀左右，是除了dyson之外清洁能力很强的一款吸尘器。平常使用的时候，吸尘效果确实不错，后盖可以打开倒出吸上来的灰尘。总共有四种吸头，分别可以用来清扫不同场景下的垃圾和灰尘。用原始的大头吸尘的时候，前面会有个照明灯亮起，哪里有灰尘都可以看得很明显。", 
 			"price":"$45",
+			"status":"sold out"
 			
 		},
 		{
@@ -95,6 +98,7 @@ var mydata = {
 			"pic_url":[{"pic":"./image/D51.jpg"},{"pic":"./image/D52.jpg"},{"pic":"./image/D53.jpg"}],
 			"description":"一年前在Costco买的,数字显示清晰，准确性也可以。", 
 			"price":"$5",
+			"status":"sold out"
 			
 		},
 		{
@@ -103,6 +107,16 @@ var mydata = {
 			"pic_url":[{"pic":"./image/D61.jpg"},{"pic":"./image/D62.jpg"},{"pic":"./image/D63.jpg"}],
 			"description":"16年的五月份刚从沃尔玛买回来的新空调，手动开关，5K BTU, 带insulation kit。studio大小的屋子制冷效果没问题。", 
 			"price":"$55",
+			"status":"sold out"
+			
+		},
+		{
+			"id":"7",
+			"name":"Mester豆浆机", 
+			"pic_url":[{"pic":"./image/D71.jpg"},{"pic":"./image/D72.jpg"},{"pic":"./image/D73.jpg"}],
+			"description":"16年5月在amazon上买的，当时买的是78.88刀。这个豆浆机最大的用处就是可以做果汁、米汁和豆浆（干豆、湿豆都可以），相当于豆浆机、熬粥锅和榨汁机一体化。<a href=\"https://www.amazon.com/gp/product/B00E8GZWDC/ref=oh_aui_detailpage_o05_s00?ie=UTF8&psc=1\">amazon link</a>", 
+			"price":"$40",
+			"status":""
 			
 		},
 
@@ -118,6 +132,7 @@ var mydata = {
 			"pic_url":[{"pic":"./image/F11.jpg"},{"pic":"./image/F12.jpg"},{"pic":"./image/F13.jpg"}],
 			"description":"这个IKEA的电视柜是两层的，第二层可以一些配套的电子产品。长90厘米，宽25厘米，高45厘米。上层承重30kg，二层承重10kg。<br> <a href=\"http://www.ikea.com/us/en/catalog/products/90243297/\">IKEA link</a>", 
 			"price":"$8",
+			"status":""
 		},
 		{
 
@@ -126,6 +141,7 @@ var mydata = {
 			"pic_url":[{"pic":"./image/F21.jpg"},{"pic":"./image/F22.jpg"},{"pic":"./image/F23.jpg"}],
 			"description":"IKEA最便宜的小方桌，我有两个，一个当做床头柜用，一个放在客厅放零食用。桌子的占地不大，随便摆在哪里都会很方便。买两个可以便宜算。<br> <a href=\"http://www.ikea.com/us/en/catalog/products/20011408/\">IKEA link</a>", 
 			"price":"$3 for each",
+			"status":""
 		},
 		{
 
@@ -134,6 +150,7 @@ var mydata = {
 			"pic_url":[{"pic":"./image/F31.jpg"},{"pic":"./image/F32.jpg"},{"pic":"./image/F33.jpg"}],
 			"description":"沃尔玛买的组装衣架，很轻，下面有滚轮，方便移动。分上下两层，上层可以挂衣服，下层可以用来挂浴巾之类的。两边长出来的部分可以挂丝巾或者小包。两个可以15刀成交。<br> <a href=\"https://www.walmart.com/ip/Homdox-Adjustable-Extendable-Single-Garment-Hangers-With-Castors-and-Shoe-Rack/138506352\">walmart link</a>", 
 			"price":"$10 for each",
+			"status":""
 		},
 		{
 
@@ -142,6 +159,7 @@ var mydata = {
 			"pic_url":[{"pic":"./image/F41.jpg"},{"pic":"./image/F42.jpg"},{"pic":"./image/F43.jpg"}],
 			"description":"IKEA书桌基本款。", 
 			"price":"$10",
+			"status":"sold out"
 		},
 		{
 
@@ -150,6 +168,7 @@ var mydata = {
 			"pic_url":[{"pic":"./image/F51.jpg"},{"pic":"./image/F41.jpg"},{"pic":"./image/F43.jpg"}],
 			"description":"IKEA转椅。<br> <a href=\"http://www.ikea.com/us/en/catalog/products/50283884/\">IKEA link</a>", 
 			"price":"$10",
+			"status":"sold out"
 		},
 		{
 
@@ -158,6 +177,7 @@ var mydata = {
 			"pic_url":[{"pic":"./image/F61.jpg"},{"pic":"./image/F62.jpg"},{"pic":"./image/F63.jpg"}],
 			"description":"IKEA Coffee table。<br> <a href=\"http://www.ikea.com/us/en/catalog/products/40104294/#/10104295\">IKEA link</a>", 
 			"price":"$10",
+			"status":"sold out"
 		},
 
 
@@ -171,6 +191,7 @@ var mydata = {
 			"pic_url":[{"pic":"./image/G11.jpg"},{"pic":"./image/G12.jpg"},{"pic":"./image/G13.jpg"}],
 			"description":"包括大富翁，CLUE多人推理游戏，UNO，Game Of Throne.所有加起来打包甩卖。分开价格可议。打包购买优先。", 
 			"price":"$10",
+			"status":""
 		},
 
 		{
@@ -179,6 +200,7 @@ var mydata = {
 			"pic_url":[{"pic":"./image/G21.jpg"},{"pic":"./image/G22.jpg"},{"pic":"./image/G23.jpg"}],
 			"description":"两种收纳，打包甩卖。。", 
 			"price":"$5",
+			"status":""
 		},
 		{
 			"id":"3",
@@ -186,6 +208,7 @@ var mydata = {
 			"pic_url":[{"pic":"./image/G31.jpg"},{"pic":"./image/G32.jpg"},{"pic":"./image/G33.jpg"}],
 			"description":"可以用来放置要洗的衣服或者洗干净的内衣，都可以收起或者折叠。", 
 			"price":"$5 for two",
+			"status":""
 		},
 
 		{
@@ -194,6 +217,7 @@ var mydata = {
 			"pic_url":[{"pic":"./image/G41.jpg"},{"pic":"./image/G42.jpg"},{"pic":"./image/G43.jpg"}],
 			"description":"当时买的两套，所以有八个7.5lbs和八个2.5lbs的。中间的钢管四根，可以任意组合。问题就是，有一根钢管弯了。。。。", 
 			"price":"$5 for all",
+			"status":""
 		},
 		{
 			"id":"5",
@@ -201,6 +225,23 @@ var mydata = {
 			"pic_url":[{"pic":"./image/G51.jpg"},{"pic":"./image/G52.jpg"},{"pic":"./image/G53.jpg"}],
 			"description":"16年感恩节在amazon买的，很新没怎么用过，充气是自动的，一分钟之内能充好。放气后也不怎么占地方。", 
 			"price":"$15",
+			"status":""
+		},
+		{
+			"id":"6",
+			"name":"奶油裱花器", 
+			"pic_url":[{"pic":"./image/G61.jpg"},{"pic":"./image/G62.jpg"},{"pic":"./image/G63.jpg"}],
+			"description":"15年10月份在amazon买的，只用过两三次。新而且干净。带四种形状的裱花头，两个固定头。<br><a href=\"https://www.amazon.com/gp/product/B003B3OK9A/ref=oh_aui_detailpage_o03_s01?ie=UTF8&psc=1\">amazon link</a>", 
+			"price":"$5",
+			"status":""
+		},
+		{
+			"id":"7",
+			"name":"动物形状蛋糕模具", 
+			"pic_url":[{"pic":"./image/G71.jpg"},{"pic":"./image/G72.jpg"},{"pic":"./image/G73.jpg"}],
+			"description":"15年10月份在amazon买的,只用过一次。。（OMG。。）罐里面总共有50pieces,我只用过里面的个别几个模具，剩下的都是全新的。<br><a href=\"https://www.amazon.com/gp/product/B0000VMITA/ref=oh_aui_detailpage_o04_s00?ie=UTF8&psc=1\">amazon link</a>", 
+			"price":"$5",
+			"status":""
 		},
 
 	]
