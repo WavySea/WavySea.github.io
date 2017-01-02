@@ -191,7 +191,7 @@ var mydata = {
 			"pic_url":[{"pic":"./image/G11.jpg"},{"pic":"./image/G12.jpg"},{"pic":"./image/G13.jpg"}],
 			"description":"包括大富翁，CLUE多人推理游戏，UNO，Game Of Throne.所有加起来打包甩卖。分开价格可议。打包购买优先。", 
 			"price":"$10",
-			"status":""
+			"status":"sold out"
 		},
 
 		{
