@@ -14,7 +14,7 @@ var mydata = {
 			"pic_url":[{"pic":"./image/E21.jpg"},{"pic":"./image/E22.jpg"},{"pic":"./image/E23.jpg"}],
 			"description":"non-smoking home<br>Display Type LCD monitor / TFT active matrix<br>Diagonal Size 24\"<br>Viewable Size 24\"<br>Built-in Devices USB hub<br>Panel Type IPS<br>Aspect RatioWidescreen - 16:10<br>Native Resolution 1920 x 1200 at 60 Hz<br>Pixel Pitch 0.27 mm<br>Brightness 400 cd/m²<br>Contrast Ratio 1000:1<br>Response Time 12 ms (On/Off); 6 ms (gray-to-gray)<br>Vertical Refresh Rate 85 Hz<br>Horizontal Refresh Rate 94 kHz<br>Video Bandwidth 205 MHz<br>Horizontal Viewing Angle 178<br>Vertical Viewing Angle 178<br>Screen Coating Anti-glare, anti-static<br>Color Temperature 9300K, 6500K<br>Controls & Adjustments Brightness, contrast, H/V position, color temperature, clock<br>OSD Languages Chinese (simplified), Brazilian Portuguese, English, German, French, Italian, Spanish, Dutch, Japanese<br>Features Picture in picture, HDCP, 102% color gamut, picture outside picture<br>ColorCarbonite<br>Dimensions (WxDxH)21.9 in x 10 in x 16.6 in<br>Weight 20.06 lbs<br>可以完美连接mac ", 
 			"price":"$80",
-			"status":"",
+			"status":"sold out",
 		},
 		{
 			"id":"3",
@@ -30,7 +30,7 @@ var mydata = {
 			"pic_url":[{"pic":"./image/E41.jpg"},{"pic":"./image/E42.jpg"},{"pic":"./image/E43.jpg"}],
 			"description":"<a href:\"https://www.amazon.com/Bose-Companion-Multimedia-Speaker-System/dp/B000HZDF8W\">The link of this product</a><br>Very good 2.0 speaker, made by Bose.<br>Excellent sound quality.<br>Non-smoking home.", 
 			"price":"$80",
-			"status":"",
+			"status":"sold out",
 		},
 
 		{
@@ -39,7 +39,7 @@ var mydata = {
 			"pic_url":[{"pic":"./image/E51.jpg"},{"pic":"./image/E52.jpg"},{"pic":"./image/E53.jpg"}],
 			"description":"- HD Plasma Television <br>-- GREAT CONDITION <br>3 HDMI ports,赠送电视信号接收器，可以免费收到纽约附近的十个左右电视台信号", 
 			"price":"$100",
-			"status":""
+			"status":"sold out"
 			
 		},
 
@@ -132,7 +132,7 @@ var mydata = {
 			"pic_url":[{"pic":"./image/F11.jpg"},{"pic":"./image/F12.jpg"},{"pic":"./image/F13.jpg"}],
 			"description":"这个IKEA的电视柜是两层的，第二层可以一些配套的电子产品。长90厘米，宽25厘米，高45厘米。上层承重30kg，二层承重10kg。<br> <a href=\"http://www.ikea.com/us/en/catalog/products/90243297/\">IKEA link</a>", 
 			"price":"$8",
-			"status":""
+			"status":"sold out"
 		},
 		{
 
